@@ -21,9 +21,9 @@ Le but principal du projet de Bachelor est le développement d’une application
 
 ### Who do I talk to? ###
 
-HEIG-VD
-Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud
+* HEIG-VD
+* Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud
 
-Département TIC - Télécommunication - Sécurité Informatique
-Bastian Gardel - Etudiant 3ème année
-bastian.gardel@heig-vd.ch
+* Département TIC - Télécommunication - Sécurité Informatique
+* Bastian Gardel - Etudiant 3ème année
+* bastian.gardel@heig-vd.ch
