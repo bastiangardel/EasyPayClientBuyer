@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF6D09331C981935009DA093"
-               BuildableName = "Client_Buyer.app"
-               BlueprintName = "Client_Buyer"
-               ReferencedContainer = "container:Client_Buyer.xcodeproj">
+               BuildableName = "TB_Client_Buyer.app"
+               BlueprintName = "TB_Client_Buyer"
+               ReferencedContainer = "container:TB_Client_Buyer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF6D09471C981936009DA093"
-               BuildableName = "Client_BuyerTests.xctest"
-               BlueprintName = "Client_BuyerTests"
-               ReferencedContainer = "container:Client_Buyer.xcodeproj">
+               BuildableName = "TB_Client_Buyer.xctest"
+               BlueprintName = "TB_Client_BuyerTests"
+               ReferencedContainer = "container:TB_Client_Buyer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF6D09521C981936009DA093"
-               BuildableName = "Client_BuyerUITests.xctest"
-               BlueprintName = "Client_BuyerUITests"
-               ReferencedContainer = "container:Client_Buyer.xcodeproj">
+               BuildableName = "TB_Client_Buyer.xctest"
+               BlueprintName = "TB_Client_BuyerUITests"
+               ReferencedContainer = "container:TB_Client_Buyer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF6D09331C981935009DA093"
-            BuildableName = "Client_Buyer.app"
-            BlueprintName = "Client_Buyer"
-            ReferencedContainer = "container:Client_Buyer.xcodeproj">
+            BuildableName = "TB_Client_Buyer.app"
+            BlueprintName = "TB_Client_Buyer"
+            ReferencedContainer = "container:TB_Client_Buyer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF6D09331C981935009DA093"
-            BuildableName = "Client_Buyer.app"
-            BlueprintName = "Client_Buyer"
-            ReferencedContainer = "container:Client_Buyer.xcodeproj">
+            BuildableName = "TB_Client_Buyer.app"
+            BlueprintName = "TB_Client_Buyer"
+            ReferencedContainer = "container:TB_Client_Buyer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF6D09331C981935009DA093"
-            BuildableName = "Client_Buyer.app"
-            BlueprintName = "Client_Buyer"
-            ReferencedContainer = "container:Client_Buyer.xcodeproj">
+            BuildableName = "TB_Client_Buyer.app"
+            BlueprintName = "TB_Client_Buyer"
+            ReferencedContainer = "container:TB_Client_Buyer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

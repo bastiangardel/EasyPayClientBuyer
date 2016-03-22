@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF6D09341C981935009DA093 /* Client_Buyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client_Buyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6D09341C981935009DA093 /* TB_Client_Buyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TB_Client_Buyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6D09371C981935009DA093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6D09391C981935009DA093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF6D093C1C981935009DA093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF6D093E1C981935009DA093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6D09411C981935009DA093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF6D09431C981935009DA093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF6D09481C981936009DA093 /* Client_BuyerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Client_BuyerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6D09481C981936009DA093 /* TB_Client_Buyer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TB_Client_Buyer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6D094C1C981936009DA093 /* Client_BuyerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client_BuyerTests.swift; sourceTree = "<group>"; };
 		AF6D094E1C981936009DA093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF6D09531C981936009DA093 /* Client_BuyerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Client_BuyerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6D09531C981936009DA093 /* TB_Client_Buyer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TB_Client_Buyer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6D09571C981936009DA093 /* Client_BuyerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client_BuyerUITests.swift; sourceTree = "<group>"; };
 		AF6D09591C981936009DA093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6D09661C981DCD009DA093 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		AF6D09351C981935009DA093 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF6D09341C981935009DA093 /* Client_Buyer.app */,
-				AF6D09481C981936009DA093 /* Client_BuyerTests.xctest */,
-				AF6D09531C981936009DA093 /* Client_BuyerUITests.xctest */,
+				AF6D09341C981935009DA093 /* TB_Client_Buyer.app */,
+				AF6D09481C981936009DA093 /* TB_Client_Buyer.xctest */,
+				AF6D09531C981936009DA093 /* TB_Client_Buyer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF6D09331C981935009DA093 /* Client_Buyer */ = {
+		AF6D09331C981935009DA093 /* TB_Client_Buyer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF6D095C1C981936009DA093 /* Build configuration list for PBXNativeTarget "Client_Buyer" */;
+			buildConfigurationList = AF6D095C1C981936009DA093 /* Build configuration list for PBXNativeTarget "TB_Client_Buyer" */;
 			buildPhases = (
 				AF6D09301C981935009DA093 /* Sources */,
 				AF6D09311C981935009DA093 /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = Client_Buyer;
+			name = TB_Client_Buyer;
 			productName = Client_Buyer;
-			productReference = AF6D09341C981935009DA093 /* Client_Buyer.app */;
+			productReference = AF6D09341C981935009DA093 /* TB_Client_Buyer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF6D09471C981936009DA093 /* Client_BuyerTests */ = {
+		AF6D09471C981936009DA093 /* TB_Client_BuyerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF6D095F1C981936009DA093 /* Build configuration list for PBXNativeTarget "Client_BuyerTests" */;
+			buildConfigurationList = AF6D095F1C981936009DA093 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerTests" */;
 			buildPhases = (
 				AF6D09441C981936009DA093 /* Sources */,
 				AF6D09451C981936009DA093 /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				AF6D094A1C981936009DA093 /* PBXTargetDependency */,
 			);
-			name = Client_BuyerTests;
+			name = TB_Client_BuyerTests;
 			productName = Client_BuyerTests;
-			productReference = AF6D09481C981936009DA093 /* Client_BuyerTests.xctest */;
+			productReference = AF6D09481C981936009DA093 /* TB_Client_Buyer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AF6D09521C981936009DA093 /* Client_BuyerUITests */ = {
+		AF6D09521C981936009DA093 /* TB_Client_BuyerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF6D09621C981936009DA093 /* Build configuration list for PBXNativeTarget "Client_BuyerUITests" */;
+			buildConfigurationList = AF6D09621C981936009DA093 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerUITests" */;
 			buildPhases = (
 				AF6D094F1C981936009DA093 /* Sources */,
 				AF6D09501C981936009DA093 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				AF6D09551C981936009DA093 /* PBXTargetDependency */,
 			);
-			name = Client_BuyerUITests;
+			name = TB_Client_BuyerUITests;
 			productName = Client_BuyerUITests;
-			productReference = AF6D09531C981936009DA093 /* Client_BuyerUITests.xctest */;
+			productReference = AF6D09531C981936009DA093 /* TB_Client_Buyer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,6 +204,11 @@
 					AF6D09331C981935009DA093 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = MGR2YCE68N;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					AF6D09471C981936009DA093 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -217,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF6D092F1C981935009DA093 /* Build configuration list for PBXProject "Client_Buyer" */;
+			buildConfigurationList = AF6D092F1C981935009DA093 /* Build configuration list for PBXProject "TB_Client_Buyer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -230,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF6D09331C981935009DA093 /* Client_Buyer */,
-				AF6D09471C981936009DA093 /* Client_BuyerTests */,
-				AF6D09521C981936009DA093 /* Client_BuyerUITests */,
+				AF6D09331C981935009DA093 /* TB_Client_Buyer */,
+				AF6D09471C981936009DA093 /* TB_Client_BuyerTests */,
+				AF6D09521C981936009DA093 /* TB_Client_BuyerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		AF6D094A1C981936009DA093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AF6D09331C981935009DA093 /* Client_Buyer */;
+			target = AF6D09331C981935009DA093 /* TB_Client_Buyer */;
 			targetProxy = AF6D09491C981936009DA093 /* PBXContainerItemProxy */;
 		};
 		AF6D09551C981936009DA093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AF6D09331C981935009DA093 /* Client_Buyer */;
+			target = AF6D09331C981935009DA093 /* TB_Client_Buyer */;
 			targetProxy = AF6D09541C981936009DA093 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,8 +417,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Client_Buyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.Client-Buyer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-Buyer";
+				PRODUCT_NAME = TB_Client_Buyer;
 			};
 			name = Debug;
 		};
@@ -423,8 +428,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Client_Buyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.Client-Buyer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-Buyer";
+				PRODUCT_NAME = TB_Client_Buyer;
 			};
 			name = Release;
 		};
@@ -435,8 +440,8 @@
 				INFOPLIST_FILE = Client_BuyerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.Client-BuyerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Client_Buyer.app/Client_Buyer";
+				PRODUCT_NAME = TB_Client_Buyer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TB_Client_Buyer.app/TB_Client_Buyer";
 			};
 			name = Debug;
 		};
@@ -447,8 +452,8 @@
 				INFOPLIST_FILE = Client_BuyerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.Client-BuyerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Client_Buyer.app/Client_Buyer";
+				PRODUCT_NAME = TB_Client_Buyer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TB_Client_Buyer.app/TB_Client_Buyer";
 			};
 			name = Release;
 		};
@@ -458,7 +463,7 @@
 				INFOPLIST_FILE = Client_BuyerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.Client-BuyerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TB_Client_Buyer;
 				TEST_TARGET_NAME = Client_Buyer;
 				USES_XCTRUNNER = YES;
 			};
@@ -470,7 +475,7 @@
 				INFOPLIST_FILE = Client_BuyerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.Client-BuyerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TB_Client_Buyer;
 				TEST_TARGET_NAME = Client_Buyer;
 				USES_XCTRUNNER = YES;
 			};
@@ -479,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF6D092F1C981935009DA093 /* Build configuration list for PBXProject "Client_Buyer" */ = {
+		AF6D092F1C981935009DA093 /* Build configuration list for PBXProject "TB_Client_Buyer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6D095A1C981936009DA093 /* Debug */,
@@ -488,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF6D095C1C981936009DA093 /* Build configuration list for PBXNativeTarget "Client_Buyer" */ = {
+		AF6D095C1C981936009DA093 /* Build configuration list for PBXNativeTarget "TB_Client_Buyer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6D095D1C981936009DA093 /* Debug */,
@@ -497,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF6D095F1C981936009DA093 /* Build configuration list for PBXNativeTarget "Client_BuyerTests" */ = {
+		AF6D095F1C981936009DA093 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6D09601C981936009DA093 /* Debug */,
@@ -506,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF6D09621C981936009DA093 /* Build configuration list for PBXNativeTarget "Client_BuyerUITests" */ = {
+		AF6D09621C981936009DA093 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6D09631C981936009DA093 /* Debug */,
