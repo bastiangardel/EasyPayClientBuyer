@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF3F00141CB2B2F700639A3D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AF3F00131CB2B2F700639A3D /* Podfile */; };
 		AF6D09381C981935009DA093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6D09371C981935009DA093 /* AppDelegate.swift */; };
 		AF6D093A1C981935009DA093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6D09391C981935009DA093 /* ViewController.swift */; };
 		AF6D093D1C981935009DA093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6D093B1C981935009DA093 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF3F00131CB2B2F700639A3D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		AF6D09341C981935009DA093 /* TB_Client_Buyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TB_Client_Buyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6D09371C981935009DA093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6D09391C981935009DA093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,9 +77,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF3F00121CB2B2E200639A3D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AF3F00131CB2B2F700639A3D /* Podfile */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		AF6D092B1C981935009DA093 = {
 			isa = PBXGroup;
 			children = (
+				AF3F00121CB2B2E200639A3D /* Config */,
 				AF6D09651C981DAB009DA093 /* Documentation */,
 				AF6D09361C981935009DA093 /* Client_Buyer */,
 				AF6D094B1C981936009DA093 /* Client_BuyerTests */,
@@ -249,6 +260,7 @@
 			files = (
 				AF6D09421C981935009DA093 /* LaunchScreen.storyboard in Resources */,
 				AF6D093F1C981935009DA093 /* Assets.xcassets in Resources */,
+				AF3F00141CB2B2F700639A3D /* Podfile in Resources */,
 				AF6D093D1C981935009DA093 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
