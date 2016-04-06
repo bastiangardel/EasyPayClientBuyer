@@ -1,1123 +1,592 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0EE3E78669651D41B4D0A7A4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>638E42F19C40AFCB5E89A9CF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BC2C38E45ABE7A4ABD6069C7</string>
-				<string>7BF5756946D82CC11E227CD2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65969D205791C3A968E383E8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_TB_Client_Buyer.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>778057132F87448E6CB6299C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>65969D205791C3A968E383E8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7BF5756946D82CC11E227CD2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TB_Client_Buyer.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3D63C0B6F1897EB7B08A3BB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AF9082141CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF90821F1CB54094003207A2</string>
-				<string>AF9082341CB54094003207A2</string>
-				<string>AF90823F1CB54094003207A2</string>
-				<string>AF90821E1CB54094003207A2</string>
-				<string>638E42F19C40AFCB5E89A9CF</string>
-				<string>D2639C4319DAAAA42E2F712B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082151CB54094003207A2</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Bastian Gardel</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>AF90821C1CB54094003207A2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>DevelopmentTeam</key>
-						<string>MGR2YCE68N</string>
-					</dict>
-					<key>AF9082301CB54094003207A2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>DevelopmentTeam</key>
-						<string>MGR2YCE68N</string>
-						<key>TestTargetID</key>
-						<string>AF90821C1CB54094003207A2</string>
-					</dict>
-					<key>AF90823B1CB54094003207A2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>DevelopmentTeam</key>
-						<string>MGR2YCE68N</string>
-						<key>TestTargetID</key>
-						<string>AF90821C1CB54094003207A2</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>AF9082181CB54094003207A2</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>AF9082141CB54094003207A2</string>
-			<key>productRefGroup</key>
-			<string>AF90821E1CB54094003207A2</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>AF90821C1CB54094003207A2</string>
-				<string>AF9082301CB54094003207A2</string>
-				<string>AF90823B1CB54094003207A2</string>
-			</array>
-		</dict>
-		<key>AF9082181CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AF9082431CB54094003207A2</string>
-				<string>AF9082441CB54094003207A2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AF9082191CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AF9082231CB54094003207A2</string>
-				<string>AF9082211CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90821A1CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>778057132F87448E6CB6299C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90821B1CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AF90822B1CB54094003207A2</string>
-				<string>AF9082281CB54094003207A2</string>
-				<string>AF9082261CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90821C1CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>AF9082451CB54094003207A2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A3D63C0B6F1897EB7B08A3BB</string>
-				<string>AF9082191CB54094003207A2</string>
-				<string>AF90821A1CB54094003207A2</string>
-				<string>AF90821B1CB54094003207A2</string>
-				<string>0EE3E78669651D41B4D0A7A4</string>
-				<string>B0399A5DB717B24EA69938E0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TB_Client_Buyer</string>
-			<key>productName</key>
-			<string>TB_Client_Buyer</string>
-			<key>productReference</key>
-			<string>AF90821D1CB54094003207A2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>AF90821D1CB54094003207A2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TB_Client_Buyer.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AF90821E1CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF90821D1CB54094003207A2</string>
-				<string>AF9082311CB54094003207A2</string>
-				<string>AF90823C1CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF90821F1CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF9082201CB54094003207A2</string>
-				<string>AF9082221CB54094003207A2</string>
-				<string>AF9082241CB54094003207A2</string>
-				<string>AF9082271CB54094003207A2</string>
-				<string>AF9082291CB54094003207A2</string>
-				<string>AF90822C1CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TB_Client_Buyer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082201CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082211CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082201CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF9082221CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082231CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082221CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF9082241CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF9082251CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082251CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082261CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082241CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF9082271CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082281CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082271CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF9082291CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF90822A1CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF90822A1CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF90822B1CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082291CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF90822C1CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF90822D1CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AF9082361CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90822E1CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90822F1CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF9082301CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>AF9082481CB54094003207A2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>AF90822D1CB54094003207A2</string>
-				<string>AF90822E1CB54094003207A2</string>
-				<string>AF90822F1CB54094003207A2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>AF9082331CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TB_Client_BuyerTests</string>
-			<key>productName</key>
-			<string>TB_Client_BuyerTests</string>
-			<key>productReference</key>
-			<string>AF9082311CB54094003207A2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>AF9082311CB54094003207A2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TB_Client_BuyerTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AF9082321CB54094003207A2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>AF9082151CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AF90821C1CB54094003207A2</string>
-			<key>remoteInfo</key>
-			<string>TB_Client_Buyer</string>
-		</dict>
-		<key>AF9082331CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>AF90821C1CB54094003207A2</string>
-			<key>targetProxy</key>
-			<string>AF9082321CB54094003207A2</string>
-		</dict>
-		<key>AF9082341CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF9082351CB54094003207A2</string>
-				<string>AF9082371CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TB_Client_BuyerTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082351CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TB_Client_BuyerTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082361CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082351CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF9082371CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082381CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AF9082411CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF9082391CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90823A1CB54094003207A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF90823B1CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>AF90824B1CB54094003207A2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>AF9082381CB54094003207A2</string>
-				<string>AF9082391CB54094003207A2</string>
-				<string>AF90823A1CB54094003207A2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>AF90823E1CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TB_Client_BuyerUITests</string>
-			<key>productName</key>
-			<string>TB_Client_BuyerUITests</string>
-			<key>productReference</key>
-			<string>AF90823C1CB54094003207A2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>AF90823C1CB54094003207A2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TB_Client_BuyerUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AF90823D1CB54094003207A2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>AF9082151CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AF90821C1CB54094003207A2</string>
-			<key>remoteInfo</key>
-			<string>TB_Client_Buyer</string>
-		</dict>
-		<key>AF90823E1CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>AF90821C1CB54094003207A2</string>
-			<key>targetProxy</key>
-			<string>AF90823D1CB54094003207A2</string>
-		</dict>
-		<key>AF90823F1CB54094003207A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AF9082401CB54094003207A2</string>
-				<string>AF9082421CB54094003207A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TB_Client_BuyerUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082401CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TB_Client_BuyerUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082411CB54094003207A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9082401CB54094003207A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AF9082421CB54094003207A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9082431CB54094003207A2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AF9082441CB54094003207A2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AF9082451CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AF9082461CB54094003207A2</string>
-				<string>AF9082471CB54094003207A2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AF9082461CB54094003207A2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>BC2C38E45ABE7A4ABD6069C7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TB_Client_Buyer/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>HEIG-VD.TB-Client-Buyer</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AF9082471CB54094003207A2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7BF5756946D82CC11E227CD2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TB_Client_Buyer/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>HEIG-VD.TB-Client-Buyer</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AF9082481CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AF9082491CB54094003207A2</string>
-				<string>AF90824A1CB54094003207A2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AF9082491CB54094003207A2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TB_Client_BuyerTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>HEIG-VD.TB-Client-BuyerTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TB_Client_Buyer.app/TB_Client_Buyer</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AF90824A1CB54094003207A2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TB_Client_BuyerTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>HEIG-VD.TB-Client-BuyerTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TB_Client_Buyer.app/TB_Client_Buyer</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AF90824B1CB54094003207A2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AF90824C1CB54094003207A2</string>
-				<string>AF90824D1CB54094003207A2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AF90824C1CB54094003207A2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TB_Client_BuyerUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>HEIG-VD.TB-Client-BuyerUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TB_Client_Buyer</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AF90824D1CB54094003207A2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TB_Client_BuyerUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>HEIG-VD.TB-Client-BuyerUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TB_Client_Buyer</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B0399A5DB717B24EA69938E0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BC2C38E45ABE7A4ABD6069C7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TB_Client_Buyer.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2639C4319DAAAA42E2F712B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>65969D205791C3A968E383E8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>AF9082151CB54094003207A2</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		778057132F87448E6CB6299C /* Pods_TB_Client_Buyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65969D205791C3A968E383E8 /* Pods_TB_Client_Buyer.framework */; };
+		AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */; };
+		AF9082211CB54094003207A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9082201CB54094003207A2 /* AppDelegate.swift */; };
+		AF9082231CB54094003207A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9082221CB54094003207A2 /* ViewController.swift */; };
+		AF9082261CB54094003207A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9082241CB54094003207A2 /* Main.storyboard */; };
+		AF9082281CB54094003207A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9082271CB54094003207A2 /* Assets.xcassets */; };
+		AF90822B1CB54094003207A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9082291CB54094003207A2 /* LaunchScreen.storyboard */; };
+		AF9082361CB54094003207A2 /* TB_Client_BuyerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9082351CB54094003207A2 /* TB_Client_BuyerTests.swift */; };
+		AF9082411CB54094003207A2 /* TB_Client_BuyerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9082401CB54094003207A2 /* TB_Client_BuyerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF9082321CB54094003207A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9082151CB54094003207A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF90821C1CB54094003207A2;
+			remoteInfo = TB_Client_Buyer;
+		};
+		AF90823D1CB54094003207A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9082151CB54094003207A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF90821C1CB54094003207A2;
+			remoteInfo = TB_Client_Buyer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65969D205791C3A968E383E8 /* Pods_TB_Client_Buyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TB_Client_Buyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF5756946D82CC11E227CD2 /* Pods-TB_Client_Buyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TB_Client_Buyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer.release.xcconfig"; sourceTree = "<group>"; };
+		AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMenu.swift; sourceTree = "<group>"; };
+		AF90821D1CB54094003207A2 /* TB_Client_Buyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TB_Client_Buyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9082201CB54094003207A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF9082221CB54094003207A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF9082251CB54094003207A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF9082271CB54094003207A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF90822A1CB54094003207A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF90822C1CB54094003207A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9082311CB54094003207A2 /* TB_Client_BuyerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TB_Client_BuyerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9082351CB54094003207A2 /* TB_Client_BuyerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TB_Client_BuyerTests.swift; sourceTree = "<group>"; };
+		AF9082371CB54094003207A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF90823C1CB54094003207A2 /* TB_Client_BuyerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TB_Client_BuyerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9082401CB54094003207A2 /* TB_Client_BuyerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TB_Client_BuyerUITests.swift; sourceTree = "<group>"; };
+		AF9082421CB54094003207A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2C38E45ABE7A4ABD6069C7 /* Pods-TB_Client_Buyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TB_Client_Buyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF90821A1CB54094003207A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778057132F87448E6CB6299C /* Pods_TB_Client_Buyer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF90822E1CB54094003207A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9082391CB54094003207A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638E42F19C40AFCB5E89A9CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC2C38E45ABE7A4ABD6069C7 /* Pods-TB_Client_Buyer.debug.xcconfig */,
+				7BF5756946D82CC11E227CD2 /* Pods-TB_Client_Buyer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF9082141CB54094003207A2 = {
+			isa = PBXGroup;
+			children = (
+				AF90821F1CB54094003207A2 /* TB_Client_Buyer */,
+				AF9082341CB54094003207A2 /* TB_Client_BuyerTests */,
+				AF90823F1CB54094003207A2 /* TB_Client_BuyerUITests */,
+				AF90821E1CB54094003207A2 /* Products */,
+				638E42F19C40AFCB5E89A9CF /* Pods */,
+				D2639C4319DAAAA42E2F712B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF90821E1CB54094003207A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF90821D1CB54094003207A2 /* TB_Client_Buyer.app */,
+				AF9082311CB54094003207A2 /* TB_Client_BuyerTests.xctest */,
+				AF90823C1CB54094003207A2 /* TB_Client_BuyerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF90821F1CB54094003207A2 /* TB_Client_Buyer */ = {
+			isa = PBXGroup;
+			children = (
+				AF9082201CB54094003207A2 /* AppDelegate.swift */,
+				AF9082221CB54094003207A2 /* ViewController.swift */,
+				AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */,
+				AF9082241CB54094003207A2 /* Main.storyboard */,
+				AF9082271CB54094003207A2 /* Assets.xcassets */,
+				AF9082291CB54094003207A2 /* LaunchScreen.storyboard */,
+				AF90822C1CB54094003207A2 /* Info.plist */,
+			);
+			path = TB_Client_Buyer;
+			sourceTree = "<group>";
+		};
+		AF9082341CB54094003207A2 /* TB_Client_BuyerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF9082351CB54094003207A2 /* TB_Client_BuyerTests.swift */,
+				AF9082371CB54094003207A2 /* Info.plist */,
+			);
+			path = TB_Client_BuyerTests;
+			sourceTree = "<group>";
+		};
+		AF90823F1CB54094003207A2 /* TB_Client_BuyerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF9082401CB54094003207A2 /* TB_Client_BuyerUITests.swift */,
+				AF9082421CB54094003207A2 /* Info.plist */,
+			);
+			path = TB_Client_BuyerUITests;
+			sourceTree = "<group>";
+		};
+		D2639C4319DAAAA42E2F712B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65969D205791C3A968E383E8 /* Pods_TB_Client_Buyer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF90821C1CB54094003207A2 /* TB_Client_Buyer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9082451CB54094003207A2 /* Build configuration list for PBXNativeTarget "TB_Client_Buyer" */;
+			buildPhases = (
+				A3D63C0B6F1897EB7B08A3BB /* Check Pods Manifest.lock */,
+				AF9082191CB54094003207A2 /* Sources */,
+				AF90821A1CB54094003207A2 /* Frameworks */,
+				AF90821B1CB54094003207A2 /* Resources */,
+				0EE3E78669651D41B4D0A7A4 /* Embed Pods Frameworks */,
+				B0399A5DB717B24EA69938E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TB_Client_Buyer;
+			productName = TB_Client_Buyer;
+			productReference = AF90821D1CB54094003207A2 /* TB_Client_Buyer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF9082301CB54094003207A2 /* TB_Client_BuyerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9082481CB54094003207A2 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerTests" */;
+			buildPhases = (
+				AF90822D1CB54094003207A2 /* Sources */,
+				AF90822E1CB54094003207A2 /* Frameworks */,
+				AF90822F1CB54094003207A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF9082331CB54094003207A2 /* PBXTargetDependency */,
+			);
+			name = TB_Client_BuyerTests;
+			productName = TB_Client_BuyerTests;
+			productReference = AF9082311CB54094003207A2 /* TB_Client_BuyerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF90823B1CB54094003207A2 /* TB_Client_BuyerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF90824B1CB54094003207A2 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerUITests" */;
+			buildPhases = (
+				AF9082381CB54094003207A2 /* Sources */,
+				AF9082391CB54094003207A2 /* Frameworks */,
+				AF90823A1CB54094003207A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF90823E1CB54094003207A2 /* PBXTargetDependency */,
+			);
+			name = TB_Client_BuyerUITests;
+			productName = TB_Client_BuyerUITests;
+			productReference = AF90823C1CB54094003207A2 /* TB_Client_BuyerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF9082151CB54094003207A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Bastian Gardel";
+				TargetAttributes = {
+					AF90821C1CB54094003207A2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MGR2YCE68N;
+					};
+					AF9082301CB54094003207A2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MGR2YCE68N;
+						TestTargetID = AF90821C1CB54094003207A2;
+					};
+					AF90823B1CB54094003207A2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MGR2YCE68N;
+						TestTargetID = AF90821C1CB54094003207A2;
+					};
+				};
+			};
+			buildConfigurationList = AF9082181CB54094003207A2 /* Build configuration list for PBXProject "TB_Client_Buyer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF9082141CB54094003207A2;
+			productRefGroup = AF90821E1CB54094003207A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF90821C1CB54094003207A2 /* TB_Client_Buyer */,
+				AF9082301CB54094003207A2 /* TB_Client_BuyerTests */,
+				AF90823B1CB54094003207A2 /* TB_Client_BuyerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF90821B1CB54094003207A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF90822B1CB54094003207A2 /* LaunchScreen.storyboard in Resources */,
+				AF9082281CB54094003207A2 /* Assets.xcassets in Resources */,
+				AF9082261CB54094003207A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF90822F1CB54094003207A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF90823A1CB54094003207A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE3E78669651D41B4D0A7A4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D63C0B6F1897EB7B08A3BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0399A5DB717B24EA69938E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF9082191CB54094003207A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */,
+				AF9082231CB54094003207A2 /* ViewController.swift in Sources */,
+				AF9082211CB54094003207A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF90822D1CB54094003207A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9082361CB54094003207A2 /* TB_Client_BuyerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9082381CB54094003207A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9082411CB54094003207A2 /* TB_Client_BuyerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF9082331CB54094003207A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF90821C1CB54094003207A2 /* TB_Client_Buyer */;
+			targetProxy = AF9082321CB54094003207A2 /* PBXContainerItemProxy */;
+		};
+		AF90823E1CB54094003207A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF90821C1CB54094003207A2 /* TB_Client_Buyer */;
+			targetProxy = AF90823D1CB54094003207A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF9082241CB54094003207A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF9082251CB54094003207A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF9082291CB54094003207A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF90822A1CB54094003207A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF9082431CB54094003207A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF9082441CB54094003207A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF9082461CB54094003207A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2C38E45ABE7A4ABD6069C7 /* Pods-TB_Client_Buyer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TB_Client_Buyer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-Buyer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF9082471CB54094003207A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF5756946D82CC11E227CD2 /* Pods-TB_Client_Buyer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TB_Client_Buyer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-Buyer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF9082491CB54094003207A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TB_Client_BuyerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-BuyerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TB_Client_Buyer.app/TB_Client_Buyer";
+			};
+			name = Debug;
+		};
+		AF90824A1CB54094003207A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TB_Client_BuyerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-BuyerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TB_Client_Buyer.app/TB_Client_Buyer";
+			};
+			name = Release;
+		};
+		AF90824C1CB54094003207A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TB_Client_BuyerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-BuyerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TB_Client_Buyer;
+			};
+			name = Debug;
+		};
+		AF90824D1CB54094003207A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TB_Client_BuyerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-BuyerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TB_Client_Buyer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF9082181CB54094003207A2 /* Build configuration list for PBXProject "TB_Client_Buyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9082431CB54094003207A2 /* Debug */,
+				AF9082441CB54094003207A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9082451CB54094003207A2 /* Build configuration list for PBXNativeTarget "TB_Client_Buyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9082461CB54094003207A2 /* Debug */,
+				AF9082471CB54094003207A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9082481CB54094003207A2 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9082491CB54094003207A2 /* Debug */,
+				AF90824A1CB54094003207A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF90824B1CB54094003207A2 /* Build configuration list for PBXNativeTarget "TB_Client_BuyerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF90824C1CB54094003207A2 /* Debug */,
+				AF90824D1CB54094003207A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF9082151CB54094003207A2 /* Project object */;
+}

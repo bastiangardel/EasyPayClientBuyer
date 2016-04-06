@@ -79,7 +79,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LoginB" destination="VEz-kh-Z6t" id="utg-n8-Aec"/>
                         <segue destination="LRW-XM-svc" kind="show" identifier="loginSegue" id="Dvk-yZ-cvC"/>
                     </connections>
                 </viewController>
@@ -90,7 +89,7 @@
         <!--Princpal Menu-->
         <scene sceneID="VLX-0G-tpx">
             <objects>
-                <viewController id="LRW-XM-svc" userLabel="Princpal Menu" sceneMemberID="viewController">
+                <viewController id="LRW-XM-svc" userLabel="Princpal Menu" customClass="ViewControllerMenu" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="20J-EV-a6V"/>
                         <viewControllerLayoutGuide type="bottom" id="IEK-kF-Bea"/>
@@ -112,11 +111,17 @@
                                         <rect key="frame" x="0.0" y="70" width="560" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="QR Code"/>
+                                        <connections>
+                                            <action selector="QRAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="6h0-rh-Saj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Am-heW">
                                         <rect key="frame" x="0.0" y="152" width="560" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="BLE Tag"/>
+                                        <connections>
+                                            <action selector="BLEAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="BN6-q9-1fu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -128,10 +133,50 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tqN-od-z5r" secondAttribute="trailing" id="ZtL-sM-YMM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="6dD-fF-ial" kind="show" identifier="QRSegue" id="cnQ-eB-zeG"/>
+                        <segue destination="IuX-wC-qyo" kind="show" identifier="BLESegue" id="Idf-OU-rND"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxB-lh-iiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="867" y="366"/>
+        </scene>
+        <!--QR-->
+        <scene sceneID="Hxw-T5-Ark">
+            <objects>
+                <viewController id="6dD-fF-ial" userLabel="QR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOG-D1-zqj"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwG-CM-GiF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ms-AZ-uf7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diP-U7-XZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="40"/>
+        </scene>
+        <!--BLE-->
+        <scene sceneID="4K5-SU-oSz">
+            <objects>
+                <viewController id="IuX-wC-qyo" userLabel="BLE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usX-2b-UK3"/>
+                        <viewControllerLayoutGuide type="bottom" id="dqY-TX-h2e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0QX-IX-1Om">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mk-4F-3Iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="716"/>
         </scene>
     </scenes>
 </document>

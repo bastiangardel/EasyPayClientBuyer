@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-   @IBOutlet weak var LoginB: UIButton!
    
    
    override func viewDidLoad() {
