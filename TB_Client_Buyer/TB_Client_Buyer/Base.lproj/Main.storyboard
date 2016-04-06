@@ -145,7 +145,7 @@
         <!--QR-->
         <scene sceneID="Hxw-T5-Ark">
             <objects>
-                <viewController id="6dD-fF-ial" userLabel="QR" sceneMemberID="viewController">
+                <viewController id="6dD-fF-ial" userLabel="QR" customClass="ViewControllerQR" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lOG-D1-zqj"/>
                         <viewControllerLayoutGuide type="bottom" id="XwG-CM-GiF"/>
@@ -163,7 +163,7 @@
         <!--BLE-->
         <scene sceneID="4K5-SU-oSz">
             <objects>
-                <viewController id="IuX-wC-qyo" userLabel="BLE" sceneMemberID="viewController">
+                <viewController id="IuX-wC-qyo" userLabel="BLE" customClass="ViewControllerBLE" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="usX-2b-UK3"/>
                         <viewControllerLayoutGuide type="bottom" id="dqY-TX-h2e"/>
