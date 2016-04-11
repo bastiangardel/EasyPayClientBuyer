@@ -22,15 +22,10 @@ class ViewControllerQR: UIViewController {
       super.viewDidLoad()
       
       scanner.prepareScan(view) { (stringValue) -> () in
-         print(stringValue)
-         
          self.value = stringValue;
-         
          self.performSegueWithIdentifier("QRPayementSegue", sender: self)
-         
       }
       scanner.scanFrame = view.bounds
-
     }
 
     override func didReceiveMemoryWarning() {
