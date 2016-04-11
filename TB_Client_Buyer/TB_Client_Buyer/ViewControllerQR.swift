@@ -17,8 +17,6 @@ class ViewControllerQR: UIViewController {
    var value: String = ""
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-      
       super.viewDidLoad()
       
       scanner.prepareScan(view) { (stringValue) -> () in
