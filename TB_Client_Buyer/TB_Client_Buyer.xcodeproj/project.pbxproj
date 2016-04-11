@@ -126,11 +126,11 @@
 				AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */,
 				AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */,
 				AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */,
+				AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */,
 				AF9082241CB54094003207A2 /* Main.storyboard */,
 				AF9082271CB54094003207A2 /* Assets.xcassets */,
 				AF9082291CB54094003207A2 /* LaunchScreen.storyboard */,
 				AF90822C1CB54094003207A2 /* Info.plist */,
-				AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */,
 			);
 			path = TB_Client_Buyer;
 			sourceTree = "<group>";
