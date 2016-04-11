@@ -10,6 +10,9 @@ import UIKit
 
 class ViewControllerLogin: UIViewController {
    
+   @IBOutlet weak var LoginTF: UITextField!
+   
+   @IBOutlet weak var PasswordTF: UITextField!
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -24,7 +27,18 @@ class ViewControllerLogin: UIViewController {
 
    @IBAction func loginAction(sender: AnyObject) {
       
-      self.performSegueWithIdentifier("loginSegue", sender: self)
+      if(LoginTF.text == "test@test.com" && PasswordTF.text == "test"){
+         self.performSegueWithIdentifier("loginSegue", sender: self)
+      }
+      else
+      {
+         let alertController = UIAlertController(title: "Login", message:
+            "Login Fail", preferredStyle: UIAlertControllerStyle.Alert)
+         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+         self.presentViewController(alertController, animated: true, completion: nil)
+      }
+      
+      
       
       
    }
