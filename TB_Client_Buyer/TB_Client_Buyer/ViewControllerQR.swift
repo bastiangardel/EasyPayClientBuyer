@@ -47,9 +47,9 @@ class ViewControllerQR: UIViewController {
    
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
       if (segue.identifier == "QRPayementSegue") {
-         let svc = segue.destinationViewController as! ViewControllerPayement;
+         let dvc = segue.destinationViewController as! ViewControllerPayement;
          
-         svc.toPass = value
+         dvc.toPass = value
          
       }
    }
