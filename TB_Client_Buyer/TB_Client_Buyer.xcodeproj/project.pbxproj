@@ -233,6 +233,11 @@
 					AF90821C1CB54094003207A2 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = MGR2YCE68N;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					AF9082301CB54094003207A2 = {
 						CreatedOnToolsVersion = 7.3;
