@@ -31,7 +31,6 @@ class ViewControllerQR: UIViewController {
       }
       scanner.scanFrame = view.bounds
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,9 +45,9 @@ class ViewControllerQR: UIViewController {
       scanner.startScan()
    }
    
-   override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
       if (segue.identifier == "QRPayementSegue") {
-         let svc = segue!.destinationViewController as! ViewControllerPayement;
+         let svc = segue.destinationViewController as! ViewControllerPayement;
          
          svc.toPass = value
          
