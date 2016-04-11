@@ -8,10 +8,28 @@
 
 import UIKit
 
+import SwiftQRCode
+
 class ViewControllerQR: UIViewController {
+   
+   let scanner = QRCode()
+   
+   var value: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      super.viewDidLoad()
+      
+      scanner.prepareScan(view) { (stringValue) -> () in
+         print(stringValue)
+         
+         self.value = stringValue;
+         
+         self.performSegueWithIdentifier("QRPayementSegue", sender: self)
+         
+      }
+      scanner.scanFrame = view.bounds
 
         // Do any additional setup after loading the view.
     }
@@ -20,16 +38,21 @@ class ViewControllerQR: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+   override func viewDidAppear(animated: Bool) {
+      super.viewDidAppear(animated)
+      
+      // start scan
+      scanner.startScan()
+   }
+   
+   override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+      if (segue.identifier == "QRPayementSegue") {
+         let svc = segue!.destinationViewController as! ViewControllerPayement;
+         
+         svc.toPass = value
+         
+      }
+   }
 
 }

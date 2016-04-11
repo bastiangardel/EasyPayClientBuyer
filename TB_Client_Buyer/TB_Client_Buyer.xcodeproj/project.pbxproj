@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		778057132F87448E6CB6299C /* Pods_TB_Client_Buyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65969D205791C3A968E383E8 /* Pods_TB_Client_Buyer.framework */; };
+		AF047EC11CBBBB7300E73B0A /* ViewControllerPayement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */; };
 		AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */; };
 		AF537ECD1CB5C39F006F6879 /* ViewControllerQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */; };
 		AF537ECF1CB5C3CA006F6879 /* ViewControllerBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		65969D205791C3A968E383E8 /* Pods_TB_Client_Buyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TB_Client_Buyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF5756946D82CC11E227CD2 /* Pods-TB_Client_Buyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TB_Client_Buyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer.release.xcconfig"; sourceTree = "<group>"; };
+		AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPayement.swift; sourceTree = "<group>"; };
 		AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMenu.swift; sourceTree = "<group>"; };
 		AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQR.swift; sourceTree = "<group>"; };
 		AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBLE.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				AF9082271CB54094003207A2 /* Assets.xcassets */,
 				AF9082291CB54094003207A2 /* LaunchScreen.storyboard */,
 				AF90822C1CB54094003207A2 /* Info.plist */,
+				AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */,
 			);
 			path = TB_Client_Buyer;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */,
+				AF047EC11CBBBB7300E73B0A /* ViewControllerPayement.swift in Sources */,
 				AF9082231CB54094003207A2 /* ViewControllerLogin.swift in Sources */,
 				AF537ECF1CB5C3CA006F6879 /* ViewControllerBLE.swift in Sources */,
 				AF9082211CB54094003207A2 /* AppDelegate.swift in Sources */,

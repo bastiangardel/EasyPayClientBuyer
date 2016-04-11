@@ -157,6 +157,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="hQN-OU-y3u" kind="show" identifier="QRPayementSegue" id="z60-Ic-so1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diP-U7-XZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,10 +178,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="bUP-ie-l6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mk-4F-3Iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1527" y="716"/>
         </scene>
+        <!--View Controller Payement-->
+        <scene sceneID="kZk-pt-gxh">
+            <objects>
+                <viewController id="hQN-OU-y3u" customClass="ViewControllerPayement" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dMz-7Q-qGq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z78-EO-d9T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TyV-a4-PeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-QE-wUc">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUA-Pg-6fu">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wdq-QE-wUc" secondAttribute="trailing" id="T5u-VD-BU3"/>
+                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="top" secondItem="dMz-7Q-qGq" secondAttribute="bottom" id="cpy-9g-Qkp"/>
+                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="leading" secondItem="TyV-a4-PeZ" secondAttribute="leadingMargin" id="fyU-uV-wHa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UID" destination="EUA-Pg-6fu" id="y7w-TC-R6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2V-Qb-sXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="397"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="z60-Ic-so1"/>
+    </inferredMetricsTieBreakers>
 </document>

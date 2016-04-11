@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CCD727581B4970690F0B4EC4'
-               BlueprintName = 'Alamofire'
+               BlueprintIdentifier = '9132B4634887F133F1F552D8'
+               BlueprintName = 'SwiftQRCode'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Alamofire.framework'>
+               BuildableName = 'SwiftQRCode.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
