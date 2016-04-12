@@ -21,9 +21,9 @@ class ViewControllerQR: UIViewController {
    
    @IBOutlet weak var FlashLight: UISwitch!
    
-   override func shouldAutorotate() -> Bool {
-      return false;
-   }
+//   override func shouldAutorotate() -> Bool {
+//      return false;
+//   }
    
    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
       return UIInterfaceOrientationMask.Portrait
@@ -32,11 +32,14 @@ class ViewControllerQR: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
       
+      
       // check if the device has torch
       if  avDevice.hasTorch {
          FlashLight.enabled = true
          FlashLight.setOn(false, animated: false)
       }
+      
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +54,8 @@ class ViewControllerQR: UIViewController {
       
       // start scan
       scanner.startScan()
+
+
    }
    
    @IBAction func FlashLightOnOff(sender: AnyObject) {
@@ -76,7 +81,7 @@ class ViewControllerQR: UIViewController {
 
    @IBAction func ReturnAction(sender: AnyObject) {
       
-      scanner.stopScan()
+      //scanner.stopScan()
       FlashLight.setOn(false, animated: false)
       
       do {

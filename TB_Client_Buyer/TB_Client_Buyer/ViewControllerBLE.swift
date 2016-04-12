@@ -7,31 +7,33 @@
 //
 
 import UIKit
-import BLEHelper
+import Bluetonium
 
 class ViewControllerBLE: UIViewController {
    
    var value: String = ""
    
+   let manager = Manager()
    
-   let bleHelper = BLECentralHelper()
+   @IBOutlet weak var ScanInProgress: UIActivityIndicatorView!
+   
+   override func viewDidLoad() {
+      super.viewDidLoad()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      bleHelper.scan(1.0, serviceUUID: nil) { (devices) -> (Void) in
-         
-      }
-    }
-
+      
+      ScanInProgress.startAnimating()
+      
+      
+   }
+   
    @IBAction func ReturnMenuAction(sender: AnyObject) {
       self.performSegueWithIdentifier("BLEReturnMenuSegue", sender: self)
    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+   override func didReceiveMemoryWarning() {
+      super.didReceiveMemoryWarning()
+      // Dispose of any resources that can be recreated.
+   }
+   
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
       if (segue.identifier == "BLEPayementSegue") {
          let svc = segue.destinationViewController as! ViewControllerPayement;
@@ -40,5 +42,5 @@ class ViewControllerBLE: UIViewController {
          
       }
    }
-
+   
 }

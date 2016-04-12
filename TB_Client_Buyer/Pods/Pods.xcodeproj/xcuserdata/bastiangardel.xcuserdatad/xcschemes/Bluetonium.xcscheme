@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D76D53D0493BC42841FA4365'
-               BlueprintName = 'BLEHelper'
+               BlueprintIdentifier = '3A65CF00FC82A5423BD48012'
+               BlueprintName = 'Bluetonium'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'BLEHelper.framework'>
+               BuildableName = 'Bluetonium.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

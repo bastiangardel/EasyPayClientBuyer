@@ -85,7 +85,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="F5t-S9-Ftr" secondAttribute="trailing" id="C3N-pN-pU8"/>
                             <constraint firstItem="F5t-S9-Ftr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X8K-Rv-Exn"/>
@@ -116,9 +116,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-od-z5r">
-                                <rect key="frame" x="20" y="120" width="560" height="276"/>
+                                <rect key="frame" x="20" y="80" width="560" height="276"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading method for the ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-F1-Qwm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Main Menu --" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-F1-Qwm">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -151,9 +151,9 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tqN-od-z5r" firstAttribute="top" secondItem="20J-EV-a6V" secondAttribute="bottom" constant="100" id="IOw-JG-WPh"/>
+                            <constraint firstItem="tqN-od-z5r" firstAttribute="top" secondItem="20J-EV-a6V" secondAttribute="bottom" constant="60" id="IOw-JG-WPh"/>
                             <constraint firstItem="tqN-od-z5r" firstAttribute="leading" secondItem="2XV-J1-flN" secondAttribute="leadingMargin" id="RRF-LQ-gNw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tqN-od-z5r" secondAttribute="trailing" id="ZtL-sM-YMM"/>
                         </constraints>
@@ -212,7 +212,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vjw-tq-Koi" firstAttribute="top" secondItem="Z7F-cJ-Ked" secondAttribute="bottom" id="H0V-Cs-psZ"/>
                             <constraint firstItem="Vjw-tq-Koi" firstAttribute="leading" secondItem="Z5N-Cv-Lyd" secondAttribute="leadingMargin" id="ciU-LR-fuY"/>
@@ -221,6 +221,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ScanInProgress" destination="jta-yk-Zfl" id="2SV-7v-ecG"/>
                         <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="yQK-60-IUz"/>
                         <segue destination="LRW-XM-svc" kind="showDetail" identifier="BLEReturnMenuSegue" action="showViewController:sender:" id="WqH-nB-wrq"/>
                     </connections>
@@ -282,7 +283,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zRs-Ro-Y9n" firstAttribute="top" secondItem="lOG-D1-zqj" secondAttribute="bottom" id="I2J-99-fyZ"/>
                             <constraint firstItem="XwG-CM-GiF" firstAttribute="top" secondItem="zRs-Ro-Y9n" secondAttribute="bottom" id="T63-uK-pAi"/>
@@ -340,7 +341,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="WqH-nB-wrq"/>
         <segue reference="yQK-60-IUz"/>
-        <segue reference="Dvk-yZ-cvC"/>
     </inferredMetricsTieBreakers>
 </document>
