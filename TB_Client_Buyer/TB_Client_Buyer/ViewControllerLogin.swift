@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class ViewControllerLogin: UIViewController {
    
@@ -14,9 +15,21 @@ class ViewControllerLogin: UIViewController {
    
    @IBOutlet weak var PasswordTF: UITextField!
    
+   @IBOutlet weak var SaveLP: UISwitch!
+   
+   let keychain = KeychainSwift()
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-      // Do any additional setup after loading the view, typically from a nib.
+      
+      if ((keychain.get("login")) != nil && (keychain.get("password")) != nil) {
+         LoginTF.text = keychain.get("login");
+         PasswordTF.text = keychain.get("password")
+      }
+      
+      if keychain.getBool("SaveLP")  != nil {
+         SaveLP.setOn(keychain.getBool("SaveLP")!, animated: false)
+      }
    }
 
    override func didReceiveMemoryWarning() {
@@ -27,8 +40,25 @@ class ViewControllerLogin: UIViewController {
 
    @IBAction func loginAction(sender: AnyObject) {
       
+      keychain.set(SaveLP.on, forKey: "SaveLP");
+      
       if(LoginTF.text == "test@test.com" && PasswordTF.text == "test"){
-         self.performSegueWithIdentifier("loginSegue", sender: self)
+         
+         
+         if ((keychain.get("login")) == nil && (keychain.get("password")) == nil) {
+            if SaveLP.on {
+               keychain.set(LoginTF.text!, forKey: "login");
+               keychain.set(PasswordTF.text!, forKey: "password");
+            }
+         }
+         else
+         {
+            if !SaveLP.on {
+               keychain.delete("login")
+               keychain.delete("password");
+            }
+
+         }
       }
       else
       {
@@ -38,6 +68,7 @@ class ViewControllerLogin: UIViewController {
          self.presentViewController(alertController, animated: true, completion: nil)
       }
       
+      self.performSegueWithIdentifier("loginSegue", sender: self)
    }
 
 }
