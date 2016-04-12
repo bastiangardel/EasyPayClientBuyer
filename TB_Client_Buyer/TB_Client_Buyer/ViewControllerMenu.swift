@@ -31,14 +31,11 @@ class ViewControllerMenu: UIViewController {
       
       self.performSegueWithIdentifier("BLESegue", sender: self)
    }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+   @IBAction func LogoutAction(sender: AnyObject) {
+      
+      self.performSegueWithIdentifier("LogoutSegue", sender: self)
+   }
 
 }

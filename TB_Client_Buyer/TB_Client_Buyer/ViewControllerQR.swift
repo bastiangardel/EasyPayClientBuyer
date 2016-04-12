@@ -61,13 +61,11 @@ class ViewControllerQR: UIViewController {
          
          if avDevice.torchActive {
             avDevice.torchMode = AVCaptureTorchMode.Off
-            print("off")
          }
          else
          {
             //avDevice.torchMode = AVCaptureTorchMode.On
             try avDevice.setTorchModeOnWithLevel(1.0)
-            print("on")
          }
       
       // unlock your device
@@ -76,6 +74,28 @@ class ViewControllerQR: UIViewController {
       catch{}
    }
 
+   @IBAction func ReturnAction(sender: AnyObject) {
+      
+      scanner.stopScan()
+      FlashLight.setOn(false, animated: false)
+      
+      do {
+         // unlock your device
+         try avDevice.lockForConfiguration()
+         
+         if avDevice.torchActive {
+            avDevice.torchMode = AVCaptureTorchMode.Off
+         }
+         
+         // unlock your device
+         avDevice.unlockForConfiguration()
+      }
+      catch{}
+      
+      self.performSegueWithIdentifier("QRReturnMenuSegue", sender: self)
+      
+   }
+   
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
       if (segue.identifier == "QRPayementSegue") {
          let dvc = segue.destinationViewController as! ViewControllerPayement;

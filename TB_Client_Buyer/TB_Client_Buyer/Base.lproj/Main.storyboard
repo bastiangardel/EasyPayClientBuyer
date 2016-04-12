@@ -9,7 +9,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Login" customClass="ViewControllerLogin" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" userLabel="Login" customClass="ViewControllerLogin" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,14 +30,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="tB4-iJ-CWr">
                                         <rect key="frame" x="0.0" y="40" width="560" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH8-c3-GsM">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH8-c3-GsM">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVB-qz-t23">
-                                                <rect key="frame" x="92" y="0.0" width="468" height="30"/>
+                                                <rect key="frame" x="92" y="0.0" width="469" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -46,14 +46,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6P8-9p-FBw">
                                         <rect key="frame" x="0.0" y="80" width="560" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrH-tw-CWR">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrH-tw-CWR">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1eu-kH-A7H">
-                                                <rect key="frame" x="92" y="0.0" width="468" height="30"/>
+                                                <rect key="frame" x="92" y="0.0" width="469" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -106,7 +106,7 @@
         <!--Princpal Menu-->
         <scene sceneID="VLX-0G-tpx">
             <objects>
-                <viewController id="LRW-XM-svc" userLabel="Princpal Menu" customClass="ViewControllerMenu" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="LRW-XM-svc" userLabel="Princpal Menu" customClass="ViewControllerMenu" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="20J-EV-a6V"/>
                         <viewControllerLayoutGuide type="bottom" id="IEK-kF-Bea"/>
@@ -116,7 +116,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-od-z5r">
-                                <rect key="frame" x="20" y="120" width="560" height="194"/>
+                                <rect key="frame" x="20" y="120" width="560" height="276"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading method for the ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-F1-Qwm">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -140,6 +140,14 @@
                                             <action selector="BLEAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="BN6-q9-1fu"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-KE-PHt">
+                                        <rect key="frame" x="0.0" y="234" width="560" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="LogoutAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="vvz-vG-3t8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -152,17 +160,79 @@
                     </view>
                     <connections>
                         <segue destination="6dD-fF-ial" kind="show" identifier="QRSegue" id="cnQ-eB-zeG"/>
-                        <segue destination="IuX-wC-qyo" kind="show" identifier="BLESegue" id="Idf-OU-rND"/>
+                        <segue destination="yVF-wl-FEX" kind="show" identifier="BLESegue" id="kbv-9O-xGc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="LogoutSegue" id="wya-Ja-ClF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxB-lh-iiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="366"/>
+            <point key="canvasLocation" x="241" y="1406"/>
+        </scene>
+        <!--BLE-->
+        <scene sceneID="oT5-Bd-Pw6">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="yVF-wl-FEX" userLabel="BLE" customClass="ViewControllerBLE" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z7F-cJ-Ked"/>
+                        <viewControllerLayoutGuide type="bottom" id="2M3-nG-vuN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5N-Cv-Lyd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vjw-tq-Koi">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan in Progress ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFS-9K-aq2">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MXN-Uw-uUG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jta-yk-Zfl">
+                                        <rect key="frame" x="0.0" y="35" width="560" height="0.0"/>
+                                    </activityIndicatorView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-Mi-GWq">
+                                        <rect key="frame" x="0.0" y="40" width="560" height="500"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-fU-yXX">
+                                        <rect key="frame" x="0.0" y="550" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="gtg-tT-Yns"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="&lt;- Retour au menu"/>
+                                        <connections>
+                                            <action selector="ReturnMenuAction:" destination="yVF-wl-FEX" eventType="touchUpInside" id="AAq-Sr-ArN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vjw-tq-Koi" firstAttribute="top" secondItem="Z7F-cJ-Ked" secondAttribute="bottom" id="H0V-Cs-psZ"/>
+                            <constraint firstItem="Vjw-tq-Koi" firstAttribute="leading" secondItem="Z5N-Cv-Lyd" secondAttribute="leadingMargin" id="ciU-LR-fuY"/>
+                            <constraint firstItem="2M3-nG-vuN" firstAttribute="top" secondItem="Vjw-tq-Koi" secondAttribute="bottom" id="sXl-6G-mLf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vjw-tq-Koi" secondAttribute="trailing" id="xYs-wX-fD2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="yQK-60-IUz"/>
+                        <segue destination="LRW-XM-svc" kind="showDetail" identifier="BLEReturnMenuSegue" action="showViewController:sender:" id="WqH-nB-wrq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIG-Bs-TfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="909"/>
         </scene>
         <!--QR-->
         <scene sceneID="Hxw-T5-Ark">
             <objects>
-                <viewController id="6dD-fF-ial" userLabel="QR" customClass="ViewControllerQR" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="6dD-fF-ial" userLabel="QR" customClass="ViewControllerQR" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lOG-D1-zqj"/>
                         <viewControllerLayoutGuide type="bottom" id="XwG-CM-GiF"/>
@@ -175,26 +245,40 @@
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jFJ-ju-muR">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <subviews>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-Pw-sD1">
-                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-Pw-sD1">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
                                                 <connections>
                                                     <action selector="FlashLightOnOff:" destination="6dD-fF-ial" eventType="valueChanged" id="Pg9-Q4-auN"/>
                                                 </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6B-1U-Wla">
-                                                <rect key="frame" x="59" y="0.0" width="501" height="31"/>
+                                                <rect key="frame" x="59" y="0.0" width="501" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" red="1" green="0.081236894251693892" blue="0.06009717391700542" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.038881270841009022" green="0.33047272971572267" blue="0.87448999396879168" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="iCI-C0-mQA"/>
+                                        </constraints>
                                     </stackView>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-qc-wr5" userLabel="ViewQR">
-                                        <rect key="frame" x="0.0" y="31" width="560" height="549"/>
+                                        <rect key="frame" x="0.0" y="30" width="560" height="520"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSF-Mp-pNz">
+                                        <rect key="frame" x="0.0" y="550" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="mKt-nY-ibW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="&lt;- Retour au menu"/>
+                                        <connections>
+                                            <action selector="ReturnAction:" destination="6dD-fF-ial" eventType="touchUpInside" id="ur8-Ij-GgM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -209,32 +293,12 @@
                     <connections>
                         <outlet property="FlashLight" destination="PVg-Pw-sD1" id="62a-Qi-TlF"/>
                         <segue destination="hQN-OU-y3u" kind="show" identifier="QRPayementSegue" id="z60-Ic-so1"/>
+                        <segue destination="LRW-XM-svc" kind="show" identifier="QRReturnMenuSegue" id="Ocg-sB-WG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diP-U7-XZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="40"/>
-        </scene>
-        <!--BLE-->
-        <scene sceneID="4K5-SU-oSz">
-            <objects>
-                <viewController id="IuX-wC-qyo" userLabel="BLE" customClass="ViewControllerBLE" customModule="TB_Client_Buyer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="usX-2b-UK3"/>
-                        <viewControllerLayoutGuide type="bottom" id="dqY-TX-h2e"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0QX-IX-1Om">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="bUP-ie-l6X"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2mk-4F-3Iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1527" y="716"/>
+            <point key="canvasLocation" x="943" y="315"/>
         </scene>
         <!--View Controller Payement-->
         <scene sceneID="kZk-pt-gxh">
@@ -272,10 +336,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2V-Qb-sXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245" y="397"/>
+            <point key="canvasLocation" x="2379" y="25"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="z60-Ic-so1"/>
+        <segue reference="yQK-60-IUz"/>
+        <segue reference="Dvk-yZ-cvC"/>
     </inferredMetricsTieBreakers>
 </document>

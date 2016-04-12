@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import BLEHelper
 
 class ViewControllerBLE: UIViewController {
    
-   
    var value: String = ""
+   
+   
+   let bleHelper = BLECentralHelper()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      bleHelper.scan(1.0, serviceUUID: nil) { (devices) -> (Void) in
+         
+      }
     }
 
+   @IBAction func ReturnMenuAction(sender: AnyObject) {
+      self.performSegueWithIdentifier("BLEReturnMenuSegue", sender: self)
+   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

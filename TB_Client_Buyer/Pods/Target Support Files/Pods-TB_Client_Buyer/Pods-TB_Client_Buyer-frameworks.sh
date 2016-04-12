@@ -85,11 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
+  install_framework "Pods-TB_Client_Buyer/BLEHelper.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
   install_framework "Pods-TB_Client_Buyer/SwiftQRCode.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
+  install_framework "Pods-TB_Client_Buyer/BLEHelper.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
   install_framework "Pods-TB_Client_Buyer/SwiftQRCode.framework"
 fi

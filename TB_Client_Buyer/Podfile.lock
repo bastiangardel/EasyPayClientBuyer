@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (3.3.0)
+  - BLEHelper (1.0.1)
   - KeychainSwift (3.0.11)
   - SwiftQRCode (2.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - BLEHelper (~> 1.0)
   - KeychainSwift (~> 3.0)
   - SwiftQRCode
 
 SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  BLEHelper: ec81a9bd828723d84c35670993bb0eb5157c9bf8
   KeychainSwift: 0a4214c910423543a42b0f30f25987d46178b6a5
   SwiftQRCode: ce939b2f3ceba3a4b89a99c981cba70604e480cf
 

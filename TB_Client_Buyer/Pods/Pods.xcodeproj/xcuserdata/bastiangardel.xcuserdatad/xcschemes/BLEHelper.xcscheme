@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '67CC5EC3B22DD121998C100D'
-               BlueprintName = 'SwiftQRCode'
+               BlueprintIdentifier = 'D76D53D0493BC42841FA4365'
+               BlueprintName = 'BLEHelper'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftQRCode.framework'>
+               BuildableName = 'BLEHelper.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

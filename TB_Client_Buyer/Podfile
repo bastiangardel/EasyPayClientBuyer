@@ -10,6 +10,8 @@ pod 'SwiftQRCode'
 
 pod 'KeychainSwift', '~> 3.0'
 
+pod 'BLEHelper', '~> 1.0'
+
 end
 
 target 'TB_Client_BuyerTests' do
