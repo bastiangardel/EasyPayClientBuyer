@@ -222,6 +222,7 @@
                     </view>
                     <connections>
                         <outlet property="ScanInProgress" destination="jta-yk-Zfl" id="2SV-7v-ecG"/>
+                        <outlet property="UUIDTable" destination="Lhz-Mi-GWq" id="B6S-CO-vZn"/>
                         <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="yQK-60-IUz"/>
                         <segue destination="LRW-XM-svc" kind="showDetail" identifier="BLEReturnMenuSegue" action="showViewController:sender:" id="WqH-nB-wrq"/>
                     </connections>

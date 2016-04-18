@@ -9,7 +9,7 @@
 import UIKit
 import Bluetonium
 
-class ViewControllerBLE: UIViewController {
+class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSource,UIPickerViewDelegate{
    
    var value: String = ""
    
@@ -17,12 +17,28 @@ class ViewControllerBLE: UIViewController {
    
    @IBOutlet weak var ScanInProgress: UIActivityIndicatorView!
    
+   @IBOutlet weak var UUIDTable: UIPickerView!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
 
+      manager.delegate = self
+      UUIDTable.delegate = self
+   }
+   
+   override func viewDidAppear(animated: Bool) {
+      super.viewDidAppear(animated)
+      
       
       ScanInProgress.startAnimating()
       
+      
+      manager.startScanForDevices()
+      
+      while manager.foundDevices.count != 0{
+      }
+      
+      manager.stopScanForDevices()
       
    }
    
@@ -41,6 +57,38 @@ class ViewControllerBLE: UIViewController {
          svc.toPass = value
          
       }
+   }
+   
+   // MARK: Manager delegate
+   
+   func manager(manager: Manager, willConnectToDevice device: Device) {
+      
+   }
+   
+   func manager(manager: Manager, didFindDevice device: Device) {
+      
+   }
+   
+   func manager(manager: Manager, connectedToDevice device: Device) {
+      self.title = "Connected!"
+   }
+   
+   func manager(manager: Manager, disconnectedFromDevice device: Device, retry: Bool) {
+      if !retry {
+         self.dismissViewControllerAnimated(true, completion: nil)
+      } else {
+         self.title = "Connecting..."
+      }
+   }
+   
+   //MARK: - Delegates and data sources
+   //MARK: Data Sources
+   func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+      return 1
+   }
+   
+   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+      return manager.foundDevices.count
    }
    
 }
