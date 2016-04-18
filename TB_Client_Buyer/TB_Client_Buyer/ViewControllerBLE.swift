@@ -19,9 +19,10 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    
    @IBOutlet weak var UUIDTable: UIPickerView!
    
+   @IBOutlet weak var GoToPaiement: UIButton!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-
       manager.delegate = self
       UUIDTable.delegate = self
    }
@@ -29,22 +30,27 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    override func viewDidAppear(animated: Bool) {
       super.viewDidAppear(animated)
       
-      
-      ScanInProgress.startAnimating()
-      
-      
-      manager.startScanForDevices()
-      
-      while manager.foundDevices.count != 0{
+      if !manager.bluetoothEnabled {
+         let alertController = UIAlertController(title: "Erreur", message:
+            "Bluetooth not enable !!", preferredStyle: UIAlertControllerStyle.Alert)
+         alertController.addAction(UIAlertAction(title: "Return to menu", style: UIAlertActionStyle.Default, handler:
+            {
+               [unowned self] (action) -> Void in
+               self.performSegueWithIdentifier("BLEReturnMenuSegue", sender: self)
+            }))
+         self.presentViewController(alertController, animated: true, completion: nil)
       }
-      
-      manager.stopScanForDevices()
-      
+      else
+      {
+         
+         manager.startScanForDevices()
+         
+         print("Start Scan")
+         
+         ScanInProgress.startAnimating()
+      }
    }
    
-   @IBAction func ReturnMenuAction(sender: AnyObject) {
-      self.performSegueWithIdentifier("BLEReturnMenuSegue", sender: self)
-   }
    override func didReceiveMemoryWarning() {
       super.didReceiveMemoryWarning()
       // Dispose of any resources that can be recreated.
@@ -53,19 +59,33 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
       if (segue.identifier == "BLEPayementSegue") {
          let svc = segue.destinationViewController as! ViewControllerPayement;
-         
          svc.toPass = value
-         
       }
    }
    
-   // MARK: Manager delegate
+   @IBAction func ReturnMenuAction(sender: AnyObject) {
+      self.performSegueWithIdentifier("BLEReturnMenuSegue", sender: self)
+   }
+   
+   @IBAction func GoToPaiementAction(sender: AnyObject) {
+      value = Array(manager.foundDevices)[UUIDTable.selectedRowInComponent(0)].peripheral.identifier.UUIDString
+      
+      self.performSegueWithIdentifier("BLEPayementSegue", sender: self)
+   }
+   
+   //Manager delegate
    
    func manager(manager: Manager, willConnectToDevice device: Device) {
       
    }
    
    func manager(manager: Manager, didFindDevice device: Device) {
+      UUIDTable.reloadAllComponents()
+      print("update")
+      
+      print(device.peripheral.name)
+      
+      GoToPaiement.enabled = true
       
    }
    
@@ -81,14 +101,24 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
       }
    }
    
-   //MARK: - Delegates and data sources
-   //MARK: Data Sources
+   //PickerView delegate
    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
       return 1
    }
    
    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
       return manager.foundDevices.count
+   }
+   
+   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+      
+      if Array(manager.foundDevices)[row].peripheral.name != nil {
+         return Array(manager.foundDevices)[row].peripheral.name
+      }
+      
+      return Array(manager.foundDevices)[row].peripheral.identifier.UUIDString
+      
+      //return Array(manager.foundDevices)[row].peripheral.name
    }
    
 }

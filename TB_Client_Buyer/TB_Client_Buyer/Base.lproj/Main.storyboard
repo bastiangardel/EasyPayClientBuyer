@@ -195,9 +195,17 @@
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jta-yk-Zfl">
                                         <rect key="frame" x="0.0" y="35" width="560" height="0.0"/>
                                     </activityIndicatorView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-Mi-GWq">
-                                        <rect key="frame" x="0.0" y="40" width="560" height="500"/>
+                                    <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-Mi-GWq">
+                                        <rect key="frame" x="0.0" y="40" width="560" height="449"/>
                                     </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-SS-20h">
+                                        <rect key="frame" x="0.0" y="499" width="560" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Go to Paiement -&gt;"/>
+                                        <connections>
+                                            <action selector="GoToPaiementAction:" destination="yVF-wl-FEX" eventType="touchUpInside" id="heF-O9-7d2"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-fU-yXX">
                                         <rect key="frame" x="0.0" y="550" width="560" height="30"/>
                                         <constraints>
@@ -221,6 +229,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="GoToPaiement" destination="sxM-SS-20h" id="uRC-s6-lQd"/>
                         <outlet property="ScanInProgress" destination="jta-yk-Zfl" id="2SV-7v-ecG"/>
                         <outlet property="UUIDTable" destination="Lhz-Mi-GWq" id="B6S-CO-vZn"/>
                         <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="yQK-60-IUz"/>
