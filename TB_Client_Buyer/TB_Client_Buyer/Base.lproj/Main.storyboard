@@ -230,6 +230,7 @@
                     </view>
                     <connections>
                         <outlet property="GoToPaiement" destination="sxM-SS-20h" id="uRC-s6-lQd"/>
+                        <outlet property="InformationLabel" destination="qFS-9K-aq2" id="1vD-TZ-RMY"/>
                         <outlet property="ScanInProgress" destination="jta-yk-Zfl" id="2SV-7v-ecG"/>
                         <outlet property="UUIDTable" destination="Lhz-Mi-GWq" id="B6S-CO-vZn"/>
                         <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="yQK-60-IUz"/>

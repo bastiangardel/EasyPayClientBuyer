@@ -21,6 +21,8 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    
    @IBOutlet weak var GoToPaiement: UIButton!
    
+   @IBOutlet weak var InformationLabel: UILabel!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       manager.delegate = self
@@ -42,11 +44,7 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
       }
       else
       {
-         
          manager.startScanForDevices()
-         
-         print("Start Scan")
-         
          ScanInProgress.startAnimating()
       }
    }
@@ -81,11 +79,10 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    
    func manager(manager: Manager, didFindDevice device: Device) {
       UUIDTable.reloadAllComponents()
-      print("update")
-      
-      print(device.peripheral.name)
       
       GoToPaiement.enabled = true
+      
+      InformationLabel.text = "Choose the check-out ID"
       
    }
    
@@ -117,8 +114,6 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
       }
       
       return Array(manager.foundDevices)[row].peripheral.identifier.UUIDString
-      
-      //return Array(manager.foundDevices)[row].peripheral.name
    }
    
 }
