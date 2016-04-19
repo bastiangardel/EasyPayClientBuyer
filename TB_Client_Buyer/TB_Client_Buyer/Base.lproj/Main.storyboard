@@ -325,13 +325,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-QE-wUc">
-                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <rect key="frame" x="20" y="28" width="560" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUA-Pg-6fu">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L8-5Dv">
+                                        <rect key="frame" x="0.0" y="30" width="560" height="30"/>
+                                        <state key="normal" title="&lt;- Return menu"/>
+                                        <connections>
+                                            <action selector="ReturnMenuAction:" destination="hQN-OU-y3u" eventType="touchUpInside" id="3FN-99-mgo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -344,6 +351,7 @@
                     </view>
                     <connections>
                         <outlet property="UID" destination="EUA-Pg-6fu" id="y7w-TC-R6j"/>
+                        <segue destination="LRW-XM-svc" kind="showDetail" identifier="ReturnMenuSegue" id="Jkz-f6-owa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2V-Qb-sXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,7 +360,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WqH-nB-wrq"/>
+        <segue reference="Jkz-f6-owa"/>
         <segue reference="yQK-60-IUz"/>
     </inferredMetricsTieBreakers>
 </document>

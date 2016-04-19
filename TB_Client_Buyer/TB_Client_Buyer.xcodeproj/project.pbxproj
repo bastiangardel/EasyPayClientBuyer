@@ -123,12 +123,11 @@
 		AF90821F1CB54094003207A2 /* TB_Client_Buyer */ = {
 			isa = PBXGroup;
 			children = (
+				AFF5AEE81CC677F60072C215 /* Storyboard */,
 				AFF5AEE71CC639250072C215 /* Communications */,
 				AFF5AEE61CC638F30072C215 /* ViewController */,
 				AF9082201CB54094003207A2 /* AppDelegate.swift */,
-				AF9082241CB54094003207A2 /* Main.storyboard */,
 				AF9082271CB54094003207A2 /* Assets.xcassets */,
-				AF9082291CB54094003207A2 /* LaunchScreen.storyboard */,
 				AF90822C1CB54094003207A2 /* Info.plist */,
 			);
 			path = TB_Client_Buyer;
@@ -170,6 +169,15 @@
 				AFF5AEE41CC627D10072C215 /* HTTPSSession.swift */,
 			);
 			name = Communications;
+			sourceTree = "<group>";
+		};
+		AFF5AEE81CC677F60072C215 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF9082241CB54094003207A2 /* Main.storyboard */,
+				AF9082291CB54094003207A2 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		D2639C4319DAAAA42E2F712B /* Frameworks */ = {

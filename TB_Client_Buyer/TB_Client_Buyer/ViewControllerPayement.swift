@@ -28,4 +28,7 @@ class ViewControllerPayement: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+   @IBAction func ReturnMenuAction(sender: AnyObject) {
+      self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
+   }
 }
