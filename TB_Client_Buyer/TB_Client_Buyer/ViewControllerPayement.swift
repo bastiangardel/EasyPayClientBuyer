@@ -11,6 +11,8 @@ import UIKit
 class ViewControllerPayement: UIViewController {
    
    var toPass:String!
+   
+   var httpsSession = HTTPSSession.sharedInstance
 
    @IBOutlet weak var UID: UITextField!
    

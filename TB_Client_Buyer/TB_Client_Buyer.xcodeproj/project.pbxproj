@@ -19,6 +19,7 @@
 		AF90822B1CB54094003207A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9082291CB54094003207A2 /* LaunchScreen.storyboard */; };
 		AF9082361CB54094003207A2 /* TB_Client_BuyerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9082351CB54094003207A2 /* TB_Client_BuyerTests.swift */; };
 		AF9082411CB54094003207A2 /* TB_Client_BuyerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9082401CB54094003207A2 /* TB_Client_BuyerUITests.swift */; };
+		AFF5AEE51CC627D10072C215 /* HTTPSSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5AEE41CC627D10072C215 /* HTTPSSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		AF90823C1CB54094003207A2 /* TB_Client_BuyerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TB_Client_BuyerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9082401CB54094003207A2 /* TB_Client_BuyerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TB_Client_BuyerUITests.swift; sourceTree = "<group>"; };
 		AF9082421CB54094003207A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF5AEE41CC627D10072C215 /* HTTPSSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSSession.swift; sourceTree = "<group>"; };
 		BC2C38E45ABE7A4ABD6069C7 /* Pods-TB_Client_Buyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TB_Client_Buyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TB_Client_Buyer/Pods-TB_Client_Buyer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 		AF90821F1CB54094003207A2 /* TB_Client_Buyer */ = {
 			isa = PBXGroup;
 			children = (
+				AFF5AEE41CC627D10072C215 /* HTTPSSession.swift */,
 				AF9082201CB54094003207A2 /* AppDelegate.swift */,
 				AF9082221CB54094003207A2 /* ViewControllerLogin.swift */,
 				AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */,
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */,
+				AFF5AEE51CC627D10072C215 /* HTTPSSession.swift in Sources */,
 				AF047EC11CBBBB7300E73B0A /* ViewControllerPayement.swift in Sources */,
 				AF9082231CB54094003207A2 /* ViewControllerLogin.swift in Sources */,
 				AF537ECF1CB5C3CA006F6879 /* ViewControllerBLE.swift in Sources */,

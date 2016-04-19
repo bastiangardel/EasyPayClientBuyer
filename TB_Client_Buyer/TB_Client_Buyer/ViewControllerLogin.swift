@@ -19,6 +19,9 @@ class ViewControllerLogin: UIViewController {
    
    let keychain = KeychainSwift()
    
+   var httpsSession = HTTPSSession.sharedInstance
+   
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
