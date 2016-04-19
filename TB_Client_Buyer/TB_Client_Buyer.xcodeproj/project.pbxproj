@@ -123,13 +123,9 @@
 		AF90821F1CB54094003207A2 /* TB_Client_Buyer */ = {
 			isa = PBXGroup;
 			children = (
-				AFF5AEE41CC627D10072C215 /* HTTPSSession.swift */,
+				AFF5AEE71CC639250072C215 /* ProtocolGestion */,
+				AFF5AEE61CC638F30072C215 /* ViewController */,
 				AF9082201CB54094003207A2 /* AppDelegate.swift */,
-				AF9082221CB54094003207A2 /* ViewControllerLogin.swift */,
-				AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */,
-				AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */,
-				AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */,
-				AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */,
 				AF9082241CB54094003207A2 /* Main.storyboard */,
 				AF9082271CB54094003207A2 /* Assets.xcassets */,
 				AF9082291CB54094003207A2 /* LaunchScreen.storyboard */,
@@ -154,6 +150,26 @@
 				AF9082421CB54094003207A2 /* Info.plist */,
 			);
 			path = TB_Client_BuyerUITests;
+			sourceTree = "<group>";
+		};
+		AFF5AEE61CC638F30072C215 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF9082221CB54094003207A2 /* ViewControllerLogin.swift */,
+				AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */,
+				AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */,
+				AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */,
+				AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AFF5AEE71CC639250072C215 /* ProtocolGestion */ = {
+			isa = PBXGroup;
+			children = (
+				AFF5AEE41CC627D10072C215 /* HTTPSSession.swift */,
+			);
+			name = ProtocolGestion;
 			sourceTree = "<group>";
 		};
 		D2639C4319DAAAA42E2F712B /* Frameworks */ = {
