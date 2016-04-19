@@ -12,7 +12,7 @@ public class HTTPSSession: NSObject {
    
    static let sharedInstance = HTTPSSession()
    
-   public var URL : String?
+   private let URL : String = "https://test.com"
    public var cookies : NSHTTPCookie?
    
    public var login : String?
@@ -23,6 +23,17 @@ public class HTTPSSession: NSObject {
    
    private override init() {
 
+   }
+   
+   public func connectionIsOK (let login: String,  let password: String) -> Bool{
+   
+      active = true
+      
+      return login == "test@test.com" && password == "test";
+   }
+   
+   public func disconnect(){
+      
    }
 
 }

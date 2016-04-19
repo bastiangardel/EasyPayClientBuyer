@@ -45,7 +45,7 @@ class ViewControllerLogin: UIViewController {
       
       keychain.set(SaveLP.on, forKey: "SaveLP");
       
-      if(LoginTF.text == "test@test.com" && PasswordTF.text == "test"){
+      if(httpsSession.connectionIsOK(LoginTF.text!, password: PasswordTF.text!)){
          
          
          if ((keychain.get("login")) == nil && (keychain.get("password")) == nil) {
