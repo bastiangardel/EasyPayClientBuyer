@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (3.3.0)
   - Bluetonium (1.0.1)
+  - FlatUIKit (1.6.2)
   - KeychainSwift (3.0.11)
   - SwiftQRCode (2.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Bluetonium
+  - FlatUIKit
   - KeychainSwift (~> 3.0)
   - SwiftQRCode
 
 SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
   Bluetonium: 3459a4509d777a824880c0f2521832cabe8cb9ea
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   KeychainSwift: 0a4214c910423543a42b0f30f25987d46178b6a5
   SwiftQRCode: ce939b2f3ceba3a4b89a99c981cba70604e480cf
 
