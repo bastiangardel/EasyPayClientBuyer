@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 public class HTTPSSession: NSObject {
    
@@ -33,6 +34,10 @@ public class HTTPSSession: NSObject {
    }
    
    public func disconnect(){
+      
+   }
+   
+   public func stoptransaction(){
       
    }
 
