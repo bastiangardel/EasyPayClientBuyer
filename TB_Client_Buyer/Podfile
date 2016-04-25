@@ -14,6 +14,9 @@ pod 'Bluetonium'
 
 pod 'FlatUIKit'
 
+pod 'SSBouncyButton', '~> 1.0'
+
+
 end
 
 target 'TB_Client_BuyerTests' do

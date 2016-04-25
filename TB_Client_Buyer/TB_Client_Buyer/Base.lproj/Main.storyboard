@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-S9-Ftr">
-                                <rect key="frame" x="20" y="30" width="560" height="226"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-S9-Ftr">
+                                <rect key="frame" x="20" y="30" width="560" height="312"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Identify yourself ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-DL-qnm">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="tB4-iJ-CWr">
-                                        <rect key="frame" x="0.0" y="40" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="66" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH8-c3-GsM">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -44,7 +44,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6P8-9p-FBw">
-                                        <rect key="frame" x="0.0" y="80" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="126" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrH-tw-CWR">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
@@ -61,7 +61,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-k1-Vtw">
-                                        <rect key="frame" x="0.0" y="120" width="560" height="31"/>
+                                        <rect key="frame" x="0.0" y="186" width="560" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save login &amp; password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-Cg-jfV">
                                                 <rect key="frame" x="0.0" y="0.0" width="501" height="31"/>
@@ -75,7 +75,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-kh-Z6t" customClass="FUIButton">
-                                        <rect key="frame" x="0.0" y="161" width="560" height="65"/>
+                                        <rect key="frame" x="0.0" y="247" width="560" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
@@ -97,7 +97,7 @@
                         <outlet property="PasswordTF" destination="1eu-kH-A7H" id="gzs-X3-I9z"/>
                         <outlet property="SaveLP" destination="39b-Il-FSi" id="BOZ-2U-Fpe"/>
                         <outlet property="loginButton" destination="VEz-kh-Z6t" id="WVL-EA-ejX"/>
-                        <segue destination="LRW-XM-svc" kind="show" identifier="loginSegue" id="Dvk-yZ-cvC"/>
+                        <segue destination="LRW-XM-svc" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Dvk-yZ-cvC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,33 +117,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-od-z5r">
-                                <rect key="frame" x="20" y="80" width="560" height="276"/>
+                                <rect key="frame" x="20" y="80" width="560" height="317"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Main Menu --" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-F1-Qwm">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-F1-Qwm">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="53"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="44"/>
+                                        <color key="textColor" red="0.95973700284957886" green="0.13306236267089844" blue="0.074092499911785126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="3" height="2"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-z1-Eug">
-                                        <rect key="frame" x="0.0" y="70" width="560" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-z1-Eug" customClass="SSBouncyButton">
+                                        <rect key="frame" x="0.0" y="93" width="560" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="QR Code"/>
                                         <connections>
                                             <action selector="QRAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="6h0-rh-Saj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Am-heW">
-                                        <rect key="frame" x="0.0" y="152" width="560" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="BLE Tag"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Am-heW" customClass="SSBouncyButton">
+                                        <rect key="frame" x="0.0" y="181" width="560" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Bluetooth"/>
                                         <connections>
                                             <action selector="BLEAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="BN6-q9-1fu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-KE-PHt">
-                                        <rect key="frame" x="0.0" y="234" width="560" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-KE-PHt" customClass="SSBouncyButton">
+                                        <rect key="frame" x="0.0" y="269" width="560" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Logout"/>
                                         <connections>
                                             <action selector="LogoutAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="vvz-vG-3t8"/>
@@ -160,9 +162,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="6dD-fF-ial" kind="show" identifier="QRSegue" id="cnQ-eB-zeG"/>
-                        <segue destination="yVF-wl-FEX" kind="show" identifier="BLESegue" id="kbv-9O-xGc"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="LogoutSegue" id="wya-Ja-ClF"/>
+                        <outlet property="BLEModeButton" destination="CkQ-Am-heW" id="f8Q-lv-owh"/>
+                        <outlet property="LogoutButton" destination="sRL-KE-PHt" id="TBx-hT-1uL"/>
+                        <outlet property="QRCodeModButton" destination="lHb-z1-Eug" id="B8n-02-fuL"/>
+                        <segue destination="6dD-fF-ial" kind="presentation" identifier="QRSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="cnQ-eB-zeG"/>
+                        <segue destination="yVF-wl-FEX" kind="presentation" identifier="BLESegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="kbv-9O-xGc"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LogoutSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="wya-Ja-ClF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxB-lh-iiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,23 +202,26 @@
                                         <rect key="frame" x="0.0" y="35" width="560" height="0.0"/>
                                     </activityIndicatorView>
                                     <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-Mi-GWq">
-                                        <rect key="frame" x="0.0" y="40" width="560" height="449"/>
+                                        <rect key="frame" x="0.0" y="40" width="560" height="440"/>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-SS-20h">
-                                        <rect key="frame" x="0.0" y="499" width="560" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-SS-20h" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="490" width="560" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="I31-CV-UzP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Go to Paiement -&gt;"/>
                                         <connections>
                                             <action selector="GoToPaiementAction:" destination="yVF-wl-FEX" eventType="touchUpInside" id="heF-O9-7d2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-fU-yXX">
-                                        <rect key="frame" x="0.0" y="550" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-fU-yXX" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="540" width="560" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="gtg-tT-Yns"/>
+                                            <constraint firstAttribute="height" constant="40" id="gtg-tT-Yns"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="&lt;- Retour au menu"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="&lt;- Main Menu"/>
                                         <connections>
                                             <action selector="ReturnMenuAction:" destination="yVF-wl-FEX" eventType="touchUpInside" id="AAq-Sr-ArN"/>
                                         </connections>
@@ -232,10 +240,11 @@
                     <connections>
                         <outlet property="GoToPaiement" destination="sxM-SS-20h" id="uRC-s6-lQd"/>
                         <outlet property="InformationLabel" destination="qFS-9K-aq2" id="1vD-TZ-RMY"/>
+                        <outlet property="ReturnButton" destination="Vfy-fU-yXX" id="omw-7i-MbB"/>
                         <outlet property="ScanInProgress" destination="jta-yk-Zfl" id="2SV-7v-ecG"/>
                         <outlet property="UUIDTable" destination="Lhz-Mi-GWq" id="B6S-CO-vZn"/>
-                        <segue destination="hQN-OU-y3u" kind="show" identifier="BLEPayementSegue" id="yQK-60-IUz"/>
-                        <segue destination="LRW-XM-svc" kind="showDetail" identifier="BLEReturnMenuSegue" action="showViewController:sender:" id="WqH-nB-wrq"/>
+                        <segue destination="hQN-OU-y3u" kind="presentation" identifier="BLEPayementSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="yQK-60-IUz"/>
+                        <segue destination="LRW-XM-svc" kind="presentation" identifier="BLEReturnMenuSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="WqH-nB-wrq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIG-Bs-TfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -278,16 +287,16 @@
                                         </constraints>
                                     </stackView>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-qc-wr5" userLabel="ViewQR">
-                                        <rect key="frame" x="0.0" y="30" width="560" height="520"/>
+                                        <rect key="frame" x="0.0" y="30" width="560" height="510"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSF-Mp-pNz">
-                                        <rect key="frame" x="0.0" y="550" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSF-Mp-pNz" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="540" width="560" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="mKt-nY-ibW"/>
+                                            <constraint firstAttribute="height" constant="40" id="mKt-nY-ibW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="&lt;- Retour au menu"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="&lt;- Main Menu"/>
                                         <connections>
                                             <action selector="ReturnAction:" destination="6dD-fF-ial" eventType="touchUpInside" id="ur8-Ij-GgM"/>
                                         </connections>
@@ -305,8 +314,10 @@
                     </view>
                     <connections>
                         <outlet property="FlashLight" destination="PVg-Pw-sD1" id="62a-Qi-TlF"/>
-                        <segue destination="hQN-OU-y3u" kind="show" identifier="QRPayementSegue" id="z60-Ic-so1"/>
-                        <segue destination="LRW-XM-svc" kind="show" identifier="QRReturnMenuSegue" id="Ocg-sB-WG1"/>
+                        <outlet property="QRView" destination="FFN-qc-wr5" id="cNr-Xu-qf1"/>
+                        <outlet property="ReturnButton" destination="kSF-Mp-pNz" id="qnJ-hS-HYR"/>
+                        <segue destination="hQN-OU-y3u" kind="presentation" identifier="QRPayementSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="z60-Ic-so1"/>
+                        <segue destination="LRW-XM-svc" kind="presentation" identifier="QRReturnMenuSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Ocg-sB-WG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diP-U7-XZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -343,7 +354,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Wdq-QE-wUc" secondAttribute="trailing" id="T5u-VD-BU3"/>
                             <constraint firstItem="Wdq-QE-wUc" firstAttribute="top" secondItem="dMz-7Q-qGq" secondAttribute="bottom" constant="8" id="cpy-9g-Qkp"/>
@@ -352,7 +363,7 @@
                     </view>
                     <connections>
                         <outlet property="UID" destination="EUA-Pg-6fu" id="y7w-TC-R6j"/>
-                        <segue destination="LRW-XM-svc" kind="showDetail" identifier="ReturnMenuSegue" id="Jkz-f6-owa"/>
+                        <segue destination="LRW-XM-svc" kind="presentation" identifier="ReturnMenuSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Jkz-f6-owa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2V-Qb-sXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -361,7 +372,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dvk-yZ-cvC"/>
+        <segue reference="WqH-nB-wrq"/>
         <segue reference="yQK-60-IUz"/>
     </inferredMetricsTieBreakers>
 </document>

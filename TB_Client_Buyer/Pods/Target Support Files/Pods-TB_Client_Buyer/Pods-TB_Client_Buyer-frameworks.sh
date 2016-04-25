@@ -85,15 +85,23 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
+  install_framework "Pods-TB_Client_Buyer/BRYSerialAnimationQueue.framework"
   install_framework "Pods-TB_Client_Buyer/Bluetonium.framework"
   install_framework "Pods-TB_Client_Buyer/FlatUIKit.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
+  install_framework "Pods-TB_Client_Buyer/SSBouncyButton.framework"
   install_framework "Pods-TB_Client_Buyer/SwiftQRCode.framework"
+  install_framework "Pods-TB_Client_Buyer/UIColor_Hex.framework"
+  install_framework "Pods-TB_Client_Buyer/UIImage_BetterAdditions.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
+  install_framework "Pods-TB_Client_Buyer/BRYSerialAnimationQueue.framework"
   install_framework "Pods-TB_Client_Buyer/Bluetonium.framework"
   install_framework "Pods-TB_Client_Buyer/FlatUIKit.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
+  install_framework "Pods-TB_Client_Buyer/SSBouncyButton.framework"
   install_framework "Pods-TB_Client_Buyer/SwiftQRCode.framework"
+  install_framework "Pods-TB_Client_Buyer/UIColor_Hex.framework"
+  install_framework "Pods-TB_Client_Buyer/UIImage_BetterAdditions.framework"
 fi

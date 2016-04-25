@@ -7,11 +7,30 @@
 //
 
 import UIKit
+import SSBouncyButton
 
 class ViewControllerMenu: UIViewController {
 
+   @IBOutlet weak var QRCodeModButton: SSBouncyButton!
+   
+   @IBOutlet weak var BLEModeButton: SSBouncyButton!
+   
+   @IBOutlet weak var LogoutButton: SSBouncyButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      QRCodeModButton.tintColor = UIColor.blackColor()
+      QRCodeModButton.cornerRadius = 5
+      QRCodeModButton.backgroundColor = UIColor.turquoiseColor()
+      
+      BLEModeButton.tintColor = UIColor.blackColor()
+      BLEModeButton.cornerRadius = 5
+      BLEModeButton.backgroundColor = UIColor.turquoiseColor()
+      
+      LogoutButton.tintColor = UIColor.blackColor()
+      LogoutButton.cornerRadius = 5
+      LogoutButton.backgroundColor = UIColor.turquoiseColor()
 
         // Do any additional setup after loading the view.
     }

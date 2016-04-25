@@ -8,6 +8,7 @@
 
 import UIKit
 import Bluetonium
+import FlatUIKit
 
 class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSource,UIPickerViewDelegate{
    
@@ -19,12 +20,29 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    
    @IBOutlet weak var UUIDTable: UIPickerView!
    
-   @IBOutlet weak var GoToPaiement: UIButton!
+   @IBOutlet weak var GoToPaiement: FUIButton!
+   
+   @IBOutlet weak var ReturnButton: FUIButton!
    
    @IBOutlet weak var InformationLabel: UILabel!
    
    override func viewDidLoad() {
       super.viewDidLoad()
+      
+      GoToPaiement.buttonColor = UIColor.turquoiseColor()
+      GoToPaiement.shadowColor = UIColor.greenSeaColor()
+      GoToPaiement.shadowHeight = 3.0
+      GoToPaiement.cornerRadius = 6.0
+      GoToPaiement.setTitleColor(UIColor.blackColor(), forState: .Normal)
+      GoToPaiement.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
+      
+      ReturnButton.buttonColor = UIColor.turquoiseColor()
+      ReturnButton.shadowColor = UIColor.greenSeaColor()
+      ReturnButton.shadowHeight = 3.0
+      ReturnButton.cornerRadius = 6.0
+      ReturnButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+      ReturnButton.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
+      
       manager.delegate = self
       UUIDTable.delegate = self
    }
