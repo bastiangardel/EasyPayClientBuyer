@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-S9-Ftr">
-                                <rect key="frame" x="20" y="30" width="560" height="203"/>
+                                <rect key="frame" x="20" y="30" width="560" height="226"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Identify yourself ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-DL-qnm">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -74,9 +74,9 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-kh-Z6t">
-                                        <rect key="frame" x="0.0" y="161" width="560" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-kh-Z6t" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="161" width="560" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAq-F9-oty"/>
@@ -96,6 +96,7 @@
                         <outlet property="LoginTF" destination="gVB-qz-t23" id="LZx-1e-SpL"/>
                         <outlet property="PasswordTF" destination="1eu-kH-A7H" id="gzs-X3-I9z"/>
                         <outlet property="SaveLP" destination="39b-Il-FSi" id="BOZ-2U-Fpe"/>
+                        <outlet property="loginButton" destination="VEz-kh-Z6t" id="WVL-EA-ejX"/>
                         <segue destination="LRW-XM-svc" kind="show" identifier="loginSegue" id="Dvk-yZ-cvC"/>
                     </connections>
                 </viewController>
@@ -360,7 +361,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WqH-nB-wrq"/>
+        <segue reference="Dvk-yZ-cvC"/>
         <segue reference="yQK-60-IUz"/>
     </inferredMetricsTieBreakers>
 </document>
