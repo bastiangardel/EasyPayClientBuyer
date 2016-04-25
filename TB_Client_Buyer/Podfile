@@ -16,6 +16,8 @@ pod 'FlatUIKit'
 
 pod 'SSBouncyButton', '~> 1.0'
 
+pod 'HTPressableButton'
+
 
 end
 

@@ -16,8 +16,10 @@ class ViewControllerPayement: UIViewController {
 
    @IBOutlet weak var UID: UITextField!
    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+   
 
       UID.text = toPass;
         // Do any additional setup after loading the view.
