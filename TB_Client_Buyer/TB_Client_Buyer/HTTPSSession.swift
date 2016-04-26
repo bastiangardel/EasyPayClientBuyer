@@ -21,14 +21,20 @@ public class HTTPSSession: NSObject {
    
    public var active : Bool = false
    
+   let manager = Alamofire.Manager(configuration: NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier("HEIG-VD.TB-Client-Buyer"))
+   
    
    private override init() {
 
+      super.init()
+      
+      manager.startRequestsImmediately = true
    }
    
    public func connectionIsOK (let login: String,  let password: String) -> Bool{
    
       active = true
+      
       
       return login == "test@test.com" && password == "test";
    }
