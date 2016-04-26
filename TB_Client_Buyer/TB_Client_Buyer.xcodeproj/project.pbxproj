@@ -261,6 +261,9 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = MGR2YCE68N;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.DataProtection = {
 								enabled = 1;
 							};

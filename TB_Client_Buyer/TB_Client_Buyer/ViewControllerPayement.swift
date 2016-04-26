@@ -23,6 +23,19 @@ class ViewControllerPayement: UIViewController {
 
       UID.text = toPass;
         // Do any additional setup after loading the view.
+      
+   
+      
+//      let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+//      dispatch_async(dispatch_get_global_queue(priority, 0)) {
+//         
+//         while(true){
+//            print("test");
+//            usleep(1000*1000)
+//         }
+//      }
+      
+      
     }
 
     override func didReceiveMemoryWarning() {

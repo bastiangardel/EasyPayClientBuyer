@@ -46,6 +46,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          httpsSession.disconnect()
       }
    }
+   
+   func application(application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+      return true
+   }
+   
+
+   func application(application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
+      return true
+   }
 
 
 }
