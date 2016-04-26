@@ -37,6 +37,11 @@ public class HTTPSSession: NSObject {
       
    }
    
+   public func suspend()
+   {
+   
+   }
+   
    public func stoptransaction(){
       
    }
