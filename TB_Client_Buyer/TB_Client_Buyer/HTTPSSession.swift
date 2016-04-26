@@ -40,5 +40,4 @@ public class HTTPSSession: NSObject {
    public func stoptransaction(){
       
    }
-
 }

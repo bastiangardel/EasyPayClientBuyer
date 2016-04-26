@@ -56,8 +56,6 @@ class ViewControllerLogin: UIViewController {
       keychain.set(SaveLP.on, forKey: "SaveLP");
       
       if(httpsSession.connectionIsOK(LoginTF.text!, password: PasswordTF.text!)){
-         
-         
          if ((keychain.get("login")) == nil && (keychain.get("password")) == nil) {
             if SaveLP.on {
                keychain.set(LoginTF.text!, forKey: "login");
@@ -72,6 +70,7 @@ class ViewControllerLogin: UIViewController {
             }
 
          }
+         self.performSegueWithIdentifier("loginSegue", sender: self)
       }
       else
       {
@@ -80,8 +79,6 @@ class ViewControllerLogin: UIViewController {
          alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
          self.presentViewController(alertController, animated: true, completion: nil)
       }
-      
-      self.performSegueWithIdentifier("loginSegue", sender: self)
    }
 
 }
