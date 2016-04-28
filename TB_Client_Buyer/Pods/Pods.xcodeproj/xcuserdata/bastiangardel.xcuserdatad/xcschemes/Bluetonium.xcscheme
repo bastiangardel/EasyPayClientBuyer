@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C5C49D33D5469D86FD1108BE'
+               BlueprintIdentifier = '79430F01826B3823D9AA6D93'
                BlueprintName = 'Bluetonium'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Bluetonium.framework'>

@@ -8,7 +8,7 @@
 
 import UIKit
 import KeychainSwift
-import FlatUIKit
+import BButton
 
 class ViewControllerLogin: UIViewController {
    
@@ -18,7 +18,7 @@ class ViewControllerLogin: UIViewController {
    
    @IBOutlet weak var SaveLP: UISwitch!
    
-   @IBOutlet weak var loginButton: FUIButton!
+   @IBOutlet weak var loginButton: BButton!
    
    let keychain = KeychainSwift()
    
@@ -28,12 +28,11 @@ class ViewControllerLogin: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      loginButton.buttonColor = UIColor.turquoiseColor()
-      loginButton.shadowColor = UIColor.greenSeaColor()
-      loginButton.shadowHeight = 6.0
-      loginButton.cornerRadius = 6.0
-      loginButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
-      loginButton.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
+      loginButton.color = UIColor.bb_successColorV2()
+      loginButton.setStyle(BButtonStyle.BootstrapV2)
+      loginButton.setType(BButtonType.Success)
+      loginButton.addAwesomeIcon(FAIcon.FASignIn, beforeTitle: false)
+      
       
       if ((keychain.get("login")) != nil && (keychain.get("password")) != nil) {
          LoginTF.text = keychain.get("login");

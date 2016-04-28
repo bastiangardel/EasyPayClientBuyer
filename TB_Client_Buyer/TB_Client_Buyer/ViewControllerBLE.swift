@@ -8,7 +8,7 @@
 
 import UIKit
 import Bluetonium
-import FlatUIKit
+import BButton
 
 class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSource,UIPickerViewDelegate{
    
@@ -20,28 +20,25 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
    
    @IBOutlet weak var UUIDTable: UIPickerView!
    
-   @IBOutlet weak var GoToPaiement: FUIButton!
+   @IBOutlet weak var GoToPaiement: BButton!
    
-   @IBOutlet weak var ReturnButton: FUIButton!
+   @IBOutlet weak var ReturnButton: BButton!
    
    @IBOutlet weak var InformationLabel: UILabel!
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      GoToPaiement.buttonColor = UIColor.turquoiseColor()
-      GoToPaiement.shadowColor = UIColor.greenSeaColor()
-      GoToPaiement.shadowHeight = 3.0
-      GoToPaiement.cornerRadius = 6.0
-      GoToPaiement.setTitleColor(UIColor.blackColor(), forState: .Normal)
-      GoToPaiement.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
       
-      ReturnButton.buttonColor = UIColor.turquoiseColor()
-      ReturnButton.shadowColor = UIColor.greenSeaColor()
-      ReturnButton.shadowHeight = 3.0
-      ReturnButton.cornerRadius = 6.0
-      ReturnButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
-      ReturnButton.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
+      GoToPaiement.color = UIColor.bb_successColorV2()
+      GoToPaiement.setStyle(BButtonStyle.BootstrapV2)
+      GoToPaiement.setType(BButtonType.Success)
+      GoToPaiement.addAwesomeIcon(FAIcon.FAAngleDoubleRight, beforeTitle: false)
+      
+      ReturnButton.color = UIColor.bb_dangerColorV2()
+      ReturnButton.setStyle(BButtonStyle.BootstrapV2)
+      ReturnButton.setType(BButtonType.Danger)
+      ReturnButton.addAwesomeIcon(FAIcon.FAAngleDoubleLeft, beforeTitle: true)
       
       manager.delegate = self
       UUIDTable.delegate = self
@@ -125,13 +122,34 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
       return manager.foundDevices.count
    }
    
-   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//      
+//      if Array(manager.foundDevices)[row].peripheral.name != nil {
+//         return Array(manager.foundDevices)[row].peripheral.name
+//      }
+//      
+//      return Array(manager.foundDevices)[row].peripheral.identifier.UUIDString
+//   }
+   
+   func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+      
+      var titleData: String
       
       if Array(manager.foundDevices)[row].peripheral.name != nil {
-         return Array(manager.foundDevices)[row].peripheral.name
+          titleData = Array(manager.foundDevices)[row].peripheral.name!
+      }
+      else
+      {
+         titleData = Array(manager.foundDevices)[row].peripheral.identifier.UUIDString
       }
       
-      return Array(manager.foundDevices)[row].peripheral.identifier.UUIDString
+
+      
+      
+      
+      let myTitle = NSAttributedString(string: titleData, attributes: [NSForegroundColorAttributeName: UIColor.redColor()])
+      
+      return myTitle
    }
    
 }

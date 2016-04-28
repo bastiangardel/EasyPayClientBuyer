@@ -10,7 +10,7 @@ import UIKit
 
 import SwiftQRCode
 
-import FlatUIKit
+import BButton
 
 import AVFoundation
 
@@ -23,7 +23,7 @@ class ViewControllerQR: UIViewController {
    
    @IBOutlet weak var FlashLight: UISwitch!
    
-   @IBOutlet weak var ReturnButton: FUIButton!
+   @IBOutlet weak var ReturnButton: BButton!
    
    @IBOutlet weak var QRView: UIView!
    
@@ -34,12 +34,11 @@ class ViewControllerQR: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
       
-      ReturnButton.buttonColor = UIColor.turquoiseColor()
-      ReturnButton.shadowColor = UIColor.greenSeaColor()
-      ReturnButton.shadowHeight = 3.0
-      ReturnButton.cornerRadius = 6.0
-      ReturnButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
-      ReturnButton.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
+      
+      ReturnButton.color = UIColor.bb_dangerColorV2()
+      ReturnButton.setStyle(BButtonStyle.BootstrapV2)
+      ReturnButton.setType(BButtonType.Danger)
+      ReturnButton.addAwesomeIcon(FAIcon.FAAngleDoubleLeft, beforeTitle: true)
       
       
       // check if the device has torch

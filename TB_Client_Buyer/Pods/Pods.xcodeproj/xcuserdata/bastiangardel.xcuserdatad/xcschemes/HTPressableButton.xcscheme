@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BD891C5B0E3E642FCD296374'
+               BlueprintIdentifier = '5B9156AC41E3D9BC40AB2929'
                BlueprintName = 'HTPressableButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'HTPressableButton.framework'>

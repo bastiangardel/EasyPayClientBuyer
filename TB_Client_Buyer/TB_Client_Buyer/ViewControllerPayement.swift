@@ -8,7 +8,7 @@
 
 import UIKit
 import BButton
-import FlatUIKit
+import BButton
 
 class ViewControllerPayement: UIViewController {
    
@@ -18,7 +18,7 @@ class ViewControllerPayement: UIViewController {
 
    @IBOutlet weak var UID: UITextField!
    
-   @IBOutlet weak var ReturnMenuButton: FUIButton!
+   @IBOutlet weak var ReturnMenuButton: BButton!
    
    @IBOutlet weak var PaiementButton: BButton!
    
@@ -29,17 +29,19 @@ class ViewControllerPayement: UIViewController {
       LoadAmountButton.color = UIColor.bb_successColorV2()
       LoadAmountButton.setStyle(BButtonStyle.BootstrapV2)
       LoadAmountButton.setType(BButtonType.Success)
+      LoadAmountButton.addAwesomeIcon(FAIcon.FADownload, beforeTitle: true)
       
-      PaiementButton.color = UIColor.bb_successColorV2()
+      PaiementButton.color = UIColor.bb_purpleBButtonColor()
       PaiementButton.setStyle(BButtonStyle.BootstrapV2)
-      PaiementButton.setType(BButtonType.Success)
+      PaiementButton.setType(BButtonType.Purple)
+      PaiementButton.addAwesomeIcon(FAIcon.FAMoney, beforeTitle: true)
       
-      ReturnMenuButton.buttonColor = UIColor.turquoiseColor()
-      ReturnMenuButton.shadowColor = UIColor.greenSeaColor()
-      ReturnMenuButton.shadowHeight = 3.0
-      ReturnMenuButton.cornerRadius = 6.0
-      ReturnMenuButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
-      ReturnMenuButton.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
+      
+      
+      ReturnMenuButton.color = UIColor.bb_dangerColorV2()
+      ReturnMenuButton.setStyle(BButtonStyle.BootstrapV2)
+      ReturnMenuButton.setType(BButtonType.Danger)
+      ReturnMenuButton.addAwesomeIcon(FAIcon.FAAngleDoubleLeft, beforeTitle: true)
 
       UID.text = toPass;
         // Do any additional setup after loading the view.

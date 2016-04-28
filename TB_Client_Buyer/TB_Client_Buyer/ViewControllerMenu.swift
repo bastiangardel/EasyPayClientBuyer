@@ -7,30 +7,34 @@
 //
 
 import UIKit
-import SSBouncyButton
+import BButton
 
 class ViewControllerMenu: UIViewController {
 
-   @IBOutlet weak var QRCodeModButton: SSBouncyButton!
+   @IBOutlet weak var QRCodeModButton: BButton!
    
-   @IBOutlet weak var BLEModeButton: SSBouncyButton!
+   @IBOutlet weak var BLEModeButton: BButton!
    
-   @IBOutlet weak var LogoutButton: SSBouncyButton!
+   @IBOutlet weak var LogoutButton: BButton!
    
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      QRCodeModButton.tintColor = UIColor.blackColor()
-      QRCodeModButton.cornerRadius = 5
-      QRCodeModButton.backgroundColor = UIColor.turquoiseColor()
+      QRCodeModButton.color = UIColor.bb_primaryColorV2()
+      QRCodeModButton.setStyle(BButtonStyle.BootstrapV2)
+      QRCodeModButton.setType(BButtonType.Primary)
+      QRCodeModButton.addAwesomeIcon(FAIcon.FAQrcode, beforeTitle: false)
       
-      BLEModeButton.tintColor = UIColor.blackColor()
-      BLEModeButton.cornerRadius = 5
-      BLEModeButton.backgroundColor = UIColor.turquoiseColor()
+      BLEModeButton.color = UIColor.bb_primaryColorV2()
+      BLEModeButton.setStyle(BButtonStyle.BootstrapV2)
+      BLEModeButton.setType(BButtonType.Primary)
+      BLEModeButton.addAwesomeIcon(FAIcon.FABluetooth, beforeTitle: false)
       
-      LogoutButton.tintColor = UIColor.blackColor()
-      LogoutButton.cornerRadius = 5
-      LogoutButton.backgroundColor = UIColor.turquoiseColor()
+      LogoutButton.color = UIColor.bb_dangerColorV2()
+      LogoutButton.setStyle(BButtonStyle.BootstrapV2)
+      LogoutButton.setType(BButtonType.Danger)
+      LogoutButton.addAwesomeIcon(FAIcon.FASignOut, beforeTitle: false)
+      
 
         // Do any additional setup after loading the view.
     }

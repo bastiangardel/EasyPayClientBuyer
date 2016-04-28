@@ -24,6 +24,8 @@ pod 'HTPressableButton'
 
 pod 'BButton'
 
+#pod 'TYPFontAwesome'
+
 
 end
 

@@ -18,17 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-S9-Ftr">
-                                <rect key="frame" x="20" y="30" width="560" height="312"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-S9-Ftr">
+                                <rect key="frame" x="20" y="30" width="560" height="310"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Identify yourself ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-DL-qnm">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Identify yourself ?" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-DL-qnm">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="34"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="27"/>
+                                        <color key="textColor" red="0.95973700284957886" green="0.13306236267089844" blue="0.074092499911785126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="3" height="2"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="tB4-iJ-CWr">
-                                        <rect key="frame" x="0.0" y="66" width="560" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="tB4-iJ-CWr">
+                                        <rect key="frame" x="0.0" y="64" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH8-c3-GsM">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -43,8 +45,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6P8-9p-FBw">
-                                        <rect key="frame" x="0.0" y="126" width="560" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6P8-9p-FBw">
+                                        <rect key="frame" x="0.0" y="124" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrH-tw-CWR">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
@@ -60,8 +62,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-k1-Vtw">
-                                        <rect key="frame" x="0.0" y="186" width="560" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-k1-Vtw">
+                                        <rect key="frame" x="0.0" y="184" width="560" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save login &amp; password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-Cg-jfV">
                                                 <rect key="frame" x="0.0" y="0.0" width="501" height="31"/>
@@ -74,10 +76,10 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-kh-Z6t" customClass="FUIButton">
-                                        <rect key="frame" x="0.0" y="247" width="560" height="65"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-kh-Z6t" customClass="BButton">
+                                        <rect key="frame" x="0.0" y="245" width="560" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                        <state key="normal" title="Login"/>
+                                        <state key="normal" title="LOGIN"/>
                                         <connections>
                                             <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAq-F9-oty"/>
                                         </connections>
@@ -116,8 +118,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-od-z5r">
-                                <rect key="frame" x="20" y="80" width="560" height="317"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-od-z5r">
+                                <rect key="frame" x="20" y="80" width="560" height="314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-F1-Qwm">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="53"/>
@@ -127,26 +129,26 @@
                                         <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="3" height="2"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-z1-Eug" customClass="SSBouncyButton">
-                                        <rect key="frame" x="0.0" y="93" width="560" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-z1-Eug" customClass="BButton">
+                                        <rect key="frame" x="0.0" y="93" width="560" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="QR Code"/>
                                         <connections>
                                             <action selector="QRAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="6h0-rh-Saj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Am-heW" customClass="SSBouncyButton">
-                                        <rect key="frame" x="0.0" y="181" width="560" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Am-heW" customClass="BButton">
+                                        <rect key="frame" x="0.0" y="180" width="560" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Bluetooth"/>
                                         <connections>
                                             <action selector="BLEAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="BN6-q9-1fu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-KE-PHt" customClass="SSBouncyButton">
-                                        <rect key="frame" x="0.0" y="269" width="560" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Logout"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-KE-PHt" customClass="BButton">
+                                        <rect key="frame" x="0.0" y="267" width="560" height="47"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <state key="normal" title="LOGOUT"/>
                                         <connections>
                                             <action selector="LogoutAction:" destination="LRW-XM-svc" eventType="touchUpInside" id="vvz-vG-3t8"/>
                                         </connections>
@@ -156,7 +158,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tqN-od-z5r" firstAttribute="top" secondItem="20J-EV-a6V" secondAttribute="bottom" constant="60" id="IOw-JG-WPh"/>
+                            <constraint firstItem="tqN-od-z5r" firstAttribute="top" secondItem="20J-EV-a6V" secondAttribute="bottom" constant="50" id="IOw-JG-WPh"/>
                             <constraint firstItem="tqN-od-z5r" firstAttribute="leading" secondItem="2XV-J1-flN" secondAttribute="leadingMargin" id="RRF-LQ-gNw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tqN-od-z5r" secondAttribute="trailing" id="ZtL-sM-YMM"/>
                         </constraints>
@@ -194,34 +196,37 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="MXN-Uw-uUG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                        <color key="textColor" red="0.95973700284957886" green="0.13306236267089844" blue="0.074092499911785126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="3" height="2"/>
                                     </label>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jta-yk-Zfl">
                                         <rect key="frame" x="0.0" y="35" width="560" height="0.0"/>
                                     </activityIndicatorView>
                                     <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-Mi-GWq">
                                         <rect key="frame" x="0.0" y="40" width="560" height="440"/>
+                                        <color key="backgroundColor" red="0.96833795309066772" green="0.98127847909927368" blue="0.93545621633529663" alpha="0.70445478723404253" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-SS-20h" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-SS-20h" customClass="BButton">
                                         <rect key="frame" x="0.0" y="490" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="I31-CV-UzP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Go to Paiement -&gt;"/>
+                                        <state key="normal" title="Go to Paiement"/>
                                         <connections>
                                             <action selector="GoToPaiementAction:" destination="yVF-wl-FEX" eventType="touchUpInside" id="heF-O9-7d2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-fU-yXX" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-fU-yXX" customClass="BButton">
                                         <rect key="frame" x="0.0" y="540" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="gtg-tT-Yns"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="&lt;- Main Menu"/>
+                                        <state key="normal" title="Return menu"/>
                                         <connections>
                                             <action selector="ReturnMenuAction:" destination="yVF-wl-FEX" eventType="touchUpInside" id="AAq-Sr-ArN"/>
                                         </connections>
@@ -290,13 +295,13 @@
                                         <rect key="frame" x="0.0" y="30" width="560" height="510"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSF-Mp-pNz" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSF-Mp-pNz" customClass="BButton">
                                         <rect key="frame" x="0.0" y="540" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="mKt-nY-ibW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="&lt;- Main Menu"/>
+                                        <state key="normal" title="Return menu"/>
                                         <connections>
                                             <action selector="ReturnAction:" destination="6dD-fF-ial" eventType="touchUpInside" id="ur8-Ij-GgM"/>
                                         </connections>
@@ -336,40 +341,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-QE-wUc">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-QE-wUc">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUA-Pg-6fu">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUA-Pg-6fu">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="10"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bs-HQ-aBe" customClass="BButton">
-                                        <rect key="frame" x="0.0" y="38" width="560" height="43"/>
+                                        <rect key="frame" x="0.0" y="46" width="560" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="mRB-Yb-YD0"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="Load the amount"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="----------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-m2-dyC">
-                                        <rect key="frame" x="0.0" y="89" width="560" height="43"/>
+                                        <rect key="frame" x="0.0" y="127" width="560" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkL-dN-tDe" customClass="BButton">
-                                        <rect key="frame" x="0.0" y="140" width="560" height="55"/>
+                                        <rect key="frame" x="0.0" y="206" width="560" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="J8c-1S-y2H"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="Paiement"/>
                                     </button>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44F-eX-mG3">
-                                        <rect key="frame" x="0.0" y="203" width="560" height="329"/>
+                                        <rect key="frame" x="0.0" y="292" width="560" height="212"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L8-5Dv" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L8-5Dv" customClass="BButton">
                                         <rect key="frame" x="0.0" y="540" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="UQV-yy-0ad"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="&lt;- Return menu"/>
+                                        <state key="normal" title="Return menu"/>
                                         <connections>
                                             <action selector="ReturnMenuAction:" destination="hQN-OU-y3u" eventType="touchUpInside" id="3FN-99-mgo"/>
                                         </connections>
@@ -399,7 +410,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Jkz-f6-owa"/>
-        <segue reference="z60-Ic-so1"/>
+        <segue reference="WqH-nB-wrq"/>
+        <segue reference="yQK-60-IUz"/>
     </inferredMetricsTieBreakers>
 </document>
