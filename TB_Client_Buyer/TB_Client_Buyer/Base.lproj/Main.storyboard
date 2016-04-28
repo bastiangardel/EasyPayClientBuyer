@@ -336,16 +336,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-QE-wUc">
-                                <rect key="frame" x="20" y="28" width="560" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-QE-wUc">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUA-Pg-6fu">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L8-5Dv">
-                                        <rect key="frame" x="0.0" y="30" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bs-HQ-aBe" customClass="BButton">
+                                        <rect key="frame" x="0.0" y="38" width="560" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Load the amount"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="----------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-m2-dyC">
+                                        <rect key="frame" x="0.0" y="89" width="560" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkL-dN-tDe" customClass="BButton">
+                                        <rect key="frame" x="0.0" y="140" width="560" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Paiement"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44F-eX-mG3">
+                                        <rect key="frame" x="0.0" y="203" width="560" height="329"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L8-5Dv" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="540" width="560" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UQV-yy-0ad"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="&lt;- Return menu"/>
                                         <connections>
                                             <action selector="ReturnMenuAction:" destination="hQN-OU-y3u" eventType="touchUpInside" id="3FN-99-mgo"/>
@@ -356,12 +379,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wdq-QE-wUc" secondAttribute="trailing" id="T5u-VD-BU3"/>
-                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="top" secondItem="dMz-7Q-qGq" secondAttribute="bottom" constant="8" id="cpy-9g-Qkp"/>
-                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="leading" secondItem="TyV-a4-PeZ" secondAttribute="leadingMargin" id="fyU-uV-wHa"/>
+                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="leading" secondItem="TyV-a4-PeZ" secondAttribute="leadingMargin" id="gK0-SW-d92"/>
+                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="bottom" secondItem="Z78-EO-d9T" secondAttribute="top" id="laL-Gu-6Vt"/>
+                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="top" secondItem="dMz-7Q-qGq" secondAttribute="bottom" id="noI-zu-DIj"/>
+                            <constraint firstItem="Wdq-QE-wUc" firstAttribute="trailing" secondItem="TyV-a4-PeZ" secondAttribute="trailingMargin" id="oKe-wj-z8F"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="LoadAmountButton" destination="4bs-HQ-aBe" id="jwV-2n-c5Q"/>
+                        <outlet property="PaiementButton" destination="hkL-dN-tDe" id="Zvv-si-1Kl"/>
+                        <outlet property="ReturnMenuButton" destination="bQd-L8-5Dv" id="m0C-gX-5pd"/>
                         <outlet property="UID" destination="EUA-Pg-6fu" id="y7w-TC-R6j"/>
                         <segue destination="LRW-XM-svc" kind="presentation" identifier="ReturnMenuSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Jkz-f6-owa"/>
                     </connections>
@@ -372,7 +399,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Jkz-f6-owa"/>
         <segue reference="z60-Ic-so1"/>
-        <segue reference="Dvk-yZ-cvC"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import BButton
+import FlatUIKit
 
 class ViewControllerPayement: UIViewController {
    
@@ -16,10 +18,28 @@ class ViewControllerPayement: UIViewController {
 
    @IBOutlet weak var UID: UITextField!
    
+   @IBOutlet weak var ReturnMenuButton: FUIButton!
+   
+   @IBOutlet weak var PaiementButton: BButton!
+   
+   @IBOutlet weak var LoadAmountButton: BButton!
    
     override func viewDidLoad() {
-        super.viewDidLoad()
-   
+      super.viewDidLoad()
+      LoadAmountButton.color = UIColor.bb_successColorV2()
+      LoadAmountButton.setStyle(BButtonStyle.BootstrapV2)
+      LoadAmountButton.setType(BButtonType.Success)
+      
+      PaiementButton.color = UIColor.bb_successColorV2()
+      PaiementButton.setStyle(BButtonStyle.BootstrapV2)
+      PaiementButton.setType(BButtonType.Success)
+      
+      ReturnMenuButton.buttonColor = UIColor.turquoiseColor()
+      ReturnMenuButton.shadowColor = UIColor.greenSeaColor()
+      ReturnMenuButton.shadowHeight = 3.0
+      ReturnMenuButton.cornerRadius = 6.0
+      ReturnMenuButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+      ReturnMenuButton.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
 
       UID.text = toPass;
         // Do any additional setup after loading the view.

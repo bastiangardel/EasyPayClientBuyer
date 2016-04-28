@@ -85,11 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
+  install_framework "Pods-TB_Client_Buyer/BButton.framework"
   install_framework "Pods-TB_Client_Buyer/BRYSerialAnimationQueue.framework"
   install_framework "Pods-TB_Client_Buyer/Bluetonium.framework"
-  install_framework "Pods-TB_Client_Buyer/Bolts.framework"
-  install_framework "Pods-TB_Client_Buyer/FBSDKCoreKit.framework"
-  install_framework "Pods-TB_Client_Buyer/FBSDKLoginKit.framework"
   install_framework "Pods-TB_Client_Buyer/FlatUIKit.framework"
   install_framework "Pods-TB_Client_Buyer/HTPressableButton.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
@@ -100,11 +98,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
+  install_framework "Pods-TB_Client_Buyer/BButton.framework"
   install_framework "Pods-TB_Client_Buyer/BRYSerialAnimationQueue.framework"
   install_framework "Pods-TB_Client_Buyer/Bluetonium.framework"
-  install_framework "Pods-TB_Client_Buyer/Bolts.framework"
-  install_framework "Pods-TB_Client_Buyer/FBSDKCoreKit.framework"
-  install_framework "Pods-TB_Client_Buyer/FBSDKLoginKit.framework"
   install_framework "Pods-TB_Client_Buyer/FlatUIKit.framework"
   install_framework "Pods-TB_Client_Buyer/HTPressableButton.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"

@@ -18,9 +18,11 @@ pod 'SSBouncyButton', '~> 1.0'
 
 pod 'HTPressableButton'
 
-pod 'FBSDKCoreKit'
+#pod 'FBSDKCoreKit'
 
-pod 'FBSDKLoginKit'
+#pod 'FBSDKLoginKit'
+
+pod 'BButton'
 
 
 end

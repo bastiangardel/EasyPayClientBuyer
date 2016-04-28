@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B1AE3DF8C2184F3E0EFCF561'
-               BlueprintName = 'Pods-TB_Client_Buyer'
+               BlueprintIdentifier = '84047F7253CAFA50C74FF4FB'
+               BlueprintName = 'BButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_TB_Client_Buyer.framework'>
+               BuildableName = 'BButton.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
