@@ -27,6 +27,8 @@ class ViewControllerQR: UIViewController {
    
    @IBOutlet weak var QRView: UIView!
    
+   @IBOutlet weak var QRLoadingIndicator: UIActivityIndicatorView!
+   
    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
       return UIInterfaceOrientationMask.Portrait
    }
@@ -34,6 +36,7 @@ class ViewControllerQR: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
       
+      QRLoadingIndicator.startAnimating()
       
       ReturnButton.color = UIColor.bb_dangerColorV2()
       ReturnButton.setStyle(BButtonStyle.BootstrapV2)
@@ -63,7 +66,7 @@ class ViewControllerQR: UIViewController {
       // start scan
       scanner.startScan()
 
-
+      QRLoadingIndicator.stopAnimating()
    }
    
    @IBAction func FlashLightOnOff(sender: AnyObject) {
@@ -131,5 +134,7 @@ class ViewControllerQR: UIViewController {
    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
       prepareScan()
       scanner.startScan()
+      
+      
    }
 }

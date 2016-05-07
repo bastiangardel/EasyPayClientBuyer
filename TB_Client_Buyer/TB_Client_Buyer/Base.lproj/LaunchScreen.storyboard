@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome !!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saO-Ix-jRX">
-                                <rect key="frame" x="197" y="274" width="205.5" height="52"/>
+                                <rect key="frame" x="197" y="274" width="206" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <color key="textColor" red="0.95973700284957886" green="0.13306236267089844" blue="0.074092499911785126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -26,7 +26,7 @@
                                 <size key="shadowOffset" width="4" height="3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright Bastian Gardel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMg-IX-hvh">
-                                <rect key="frame" x="153.5" y="343" width="293" height="34.5"/>
+                                <rect key="frame" x="154" y="343" width="293" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                                 <size key="shadowOffset" width="4" height="3"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.46064513921737671" green="0.90995931625366211" blue="0.72971796989440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.72035223245620728" green="0.8797573447227478" blue="0.93801230192184448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="saO-Ix-jRX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4nE-sT-G1h"/>
                             <constraint firstItem="MMg-IX-hvh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5O7-JJ-KZh"/>
