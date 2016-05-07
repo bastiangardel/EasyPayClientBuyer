@@ -12,20 +12,11 @@ pod 'KeychainSwift', '~> 3.0'
 
 pod 'Bluetonium'
 
-pod 'FlatUIKit'
-
-pod 'SSBouncyButton', '~> 1.0'
-
-pod 'HTPressableButton'
-
 #pod 'FBSDKCoreKit'
 
 #pod 'FBSDKLoginKit'
 
 pod 'BButton'
-
-#pod 'TYPFontAwesome'
-
 
 end
 
