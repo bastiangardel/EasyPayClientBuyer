@@ -57,6 +57,9 @@ class ViewControllerMenu: UIViewController {
 
    
    @IBAction func LogoutAction(sender: AnyObject) {
+      let httpsSession = HTTPSSession.sharedInstance
+      
+      httpsSession.logout()
       
       self.performSegueWithIdentifier("LogoutSegue", sender: self)
    }

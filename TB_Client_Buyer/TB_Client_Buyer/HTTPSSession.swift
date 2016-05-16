@@ -19,27 +19,72 @@ public class HTTPSSession: NSObject {
    public var login : String?
    public var password : String?
    
-   public var active : Bool = false
    
-   let manager = Alamofire.Manager(configuration: NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier("HEIG-VD.TB-Client-Buyer"))
+   let defaultManager: Alamofire.Manager = {
+      let serverTrustPolicies: [String: ServerTrustPolicy] = [
+         "192.168.1.46": .DisableEvaluation
+      ]
+      
+      
+      let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+      configuration.HTTPAdditionalHeaders = Alamofire.Manager.defaultHTTPHeaders
+      configuration.timeoutIntervalForRequest = 2
+      
+      return Alamofire.Manager(
+         configuration: configuration,
+         serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
+      )
+   }()
    
    
    private override init() {
 
       super.init()
       
-      manager.startRequestsImmediately = true
    }
    
-   public func connectionIsOK (let login: String,  let password: String) -> Bool{
-   
-      active = true
-      
-      
-      return login == "test@test.com" && password == "test";
+   func updateCookies(response: Response<NSData, NSError>) {
+      if let
+         headerFields = response.response?.allHeaderFields as? [String: String],
+         URL = response.request?.URL {
+         let cookies = NSHTTPCookie.cookiesWithResponseHeaderFields(headerFields, forURL: URL)
+         // Set the cookies back in our shared instance. They'll be sent back with each subsequent request.
+         defaultManager.session.configuration.HTTPCookieStorage?.setCookies(cookies, forURL: URL, mainDocumentURL: nil)
+      }
    }
    
-   public func disconnect(){
+   public func login (let login: String,  let password: String, completion: (success: Bool) -> Void){
+   
+      let credentials = ["username": login ,"password": password ]
+      let headers = [
+         "Content-Type": "application/json"
+      ]
+      
+      
+      
+      
+      defaultManager.request(.POST, "https://192.168.1.46:9000/users/auth", headers : headers, parameters: credentials , encoding: .JSON)
+         .validate()
+         .responseData{ Response in
+            switch Response.result {
+            case .Success:
+               self.updateCookies(Response)
+               print("login Successful")
+               completion(success: true)
+            case .Failure(let error):
+               print("login fail")
+               print(error)
+               completion(success: false)
+            }
+         }
+      
+   }
+   
+   public func logout(){
+      
+      defaultManager.request(.POST, "https://192.168.1.46:9000/users/logout").responseData{ Response in
+         print("logout")
+      }
       
    }
    

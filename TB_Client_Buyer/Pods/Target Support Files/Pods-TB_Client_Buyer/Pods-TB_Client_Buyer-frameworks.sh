@@ -88,12 +88,16 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TB_Client_Buyer/BButton.framework"
   install_framework "Pods-TB_Client_Buyer/Bluetonium.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
+  install_framework "Pods-TB_Client_Buyer/ObjectMapper.framework"
   install_framework "Pods-TB_Client_Buyer/SwiftQRCode.framework"
+  install_framework "Pods-TB_Client_Buyer/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TB_Client_Buyer/Alamofire.framework"
   install_framework "Pods-TB_Client_Buyer/BButton.framework"
   install_framework "Pods-TB_Client_Buyer/Bluetonium.framework"
   install_framework "Pods-TB_Client_Buyer/KeychainSwift.framework"
+  install_framework "Pods-TB_Client_Buyer/ObjectMapper.framework"
   install_framework "Pods-TB_Client_Buyer/SwiftQRCode.framework"
+  install_framework "Pods-TB_Client_Buyer/SwiftyJSON.framework"
 fi

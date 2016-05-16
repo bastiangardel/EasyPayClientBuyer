@@ -18,6 +18,10 @@ pod 'Bluetonium'
 
 pod 'BButton'
 
+pod 'ObjectMapper', '~> 1.3'
+
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+
 end
 
 target 'TB_Client_BuyerTests' do

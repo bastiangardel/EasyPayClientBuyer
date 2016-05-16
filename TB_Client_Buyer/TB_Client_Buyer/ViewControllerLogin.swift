@@ -54,30 +54,42 @@ class ViewControllerLogin: UIViewController {
       
       keychain.set(SaveLP.on, forKey: "SaveLP");
       
-      if(httpsSession.connectionIsOK(LoginTF.text!, password: PasswordTF.text!)){
-         if ((keychain.get("login")) == nil && (keychain.get("password")) == nil) {
-            if SaveLP.on {
-               keychain.set(LoginTF.text!, forKey: "login");
-               keychain.set(PasswordTF.text!, forKey: "password");
+      loginButton.enabled = false
+      
+      httpsSession.login(LoginTF.text!, password: PasswordTF.text!){
+         (success: Bool) in
+         
+         if(success)
+         {
+            if ((self.keychain.get("login")) == nil && (self.keychain.get("password")) == nil) {
+               if self.SaveLP.on {
+                  self.keychain.set(self.LoginTF.text!, forKey: "login");
+                  self.keychain.set(self.PasswordTF.text!, forKey: "password");
+               }
             }
+            else
+            {
+               if !self.SaveLP.on {
+                  self.keychain.delete("login")
+                  self.keychain.delete("password");
+               }
+               
+            }
+            self.performSegueWithIdentifier("loginSegue", sender: self)
          }
          else
          {
-            if !SaveLP.on {
-               keychain.delete("login")
-               keychain.delete("password");
-            }
-
+            let alertController = UIAlertController(title: "Login", message:
+               "Login Fail", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            self.loginButton.enabled = true
          }
-         self.performSegueWithIdentifier("loginSegue", sender: self)
+         
       }
-      else
-      {
-         let alertController = UIAlertController(title: "Login", message:
-            "Login Fail", preferredStyle: UIAlertControllerStyle.Alert)
-         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-         self.presentViewController(alertController, animated: true, completion: nil)
-      }
+      
+
    }
 
 }
