@@ -9,6 +9,8 @@
 import UIKit
 import KeychainSwift
 import BButton
+import MBProgressHUD
+import SCLAlertView
 
 class ViewControllerLogin: UIViewController {
    
@@ -24,6 +26,9 @@ class ViewControllerLogin: UIViewController {
    
    var httpsSession = HTTPSSession.sharedInstance
    
+   var hud: MBProgressHUD?
+   
+  
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -56,8 +61,11 @@ class ViewControllerLogin: UIViewController {
       
       loginButton.enabled = false
       
+      hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+      hud?.labelText = "Login Request in Progress"
+      
       httpsSession.login(LoginTF.text!, password: PasswordTF.text!){
-         (success: Bool) in
+         (success: Bool, errorDescription:String) in
          
          if(success)
          {
@@ -79,12 +87,18 @@ class ViewControllerLogin: UIViewController {
          }
          else
          {
-            let alertController = UIAlertController(title: "Login", message:
-               "Login Fail", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-            self.presentViewController(alertController, animated: true, completion: nil)
+            self.hud!.hide(true)
+
+            let alertView = SCLAlertView()
+            alertView.showError("Login", subTitle: errorDescription)
+            
+//            let alertController = UIAlertController(title: "Login", message:
+//               errorDescription, preferredStyle: UIAlertControllerStyle.Alert)
+//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+//            self.presentViewController(alertController, animated: true, completion: nil)
             
             self.loginButton.enabled = true
+            
          }
          
       }

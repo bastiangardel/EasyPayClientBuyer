@@ -8,16 +8,15 @@
 
 import UIKit
 import Alamofire
+import MBProgressHUD
 
 public class HTTPSSession: NSObject {
    
    static let sharedInstance = HTTPSSession()
    
-   //static let URL : String = "192.168.1.46"
    static let URL : String = Settings.sharedInstance.getParameterString("address_preference")
    
    
-   //static let PORT : String = "9000"
    static let PORT : String = Settings.sharedInstance.getParameterString("port_preference")
    
    
@@ -38,13 +37,40 @@ public class HTTPSSession: NSObject {
    
    
    private override init() {
-
+      
       super.init()
       
    }
    
    private func completeURL( address : String, port : String, restEndpoint : String) -> String{
       return "https://" + address + ":" + port + restEndpoint;
+   }
+   
+   private func errorDescription(response : Response<NSData,NSError>, error : NSError)->String
+   {
+      var description: String = ""
+      var errorNumber: Int
+      if response.response != nil{
+         errorNumber = (response.response?.statusCode)!
+         switch errorNumber {
+         case 401:
+            description = "Acces Deny"
+         case 500:
+            description = "Erreur Server"
+         case 404:
+            description = "Ressource not found"
+         default:
+            description = "Undefined"
+         }
+      }
+      else
+      {
+         errorNumber = error.code
+         description = error.localizedDescription
+         
+      }
+      
+      return String(errorNumber) + " : " + description
    }
    
    private func updateCookies(response: Response<NSData, NSError>) {
@@ -57,14 +83,16 @@ public class HTTPSSession: NSObject {
       }
    }
    
-   public func login (let login: String,  let password: String, completion: (success: Bool) -> Void){
-   
+   public func login (let login: String,  let password: String, completion: (success: Bool, errorDescription: String) -> Void){
+      
       let credentials = ["username": login ,"password": password ]
       let headers = [
          "Content-Type": "application/json"
       ]
       
       print("try to login to " + completeURL(HTTPSSession.URL, port: HTTPSSession.PORT, restEndpoint: "/users/auth"))
+      
+      
       
       defaultManager.request(.POST, completeURL(HTTPSSession.URL, port: HTTPSSession.PORT, restEndpoint: "/users/auth"), headers : headers, parameters: credentials , encoding: .JSON)
          .validate()
@@ -73,30 +101,23 @@ public class HTTPSSession: NSObject {
             case .Success:
                self.updateCookies(Response)
                print("login Successful")
-               completion(success: true)
+               completion(success: true, errorDescription: "")
+               
+               
             case .Failure(let error):
                print("login fail")
-               print(error)
-               completion(success: false)
+               completion(success: false, errorDescription : self.errorDescription(Response, error: error))
             }
-         }
-      
+      }
    }
    
+   
+   
    public func logout(){
-      
-      defaultManager.request(.POST, "https://192.168.1.46:9000/users/logout").responseData{ Response in
+      defaultManager.request(.POST, completeURL(HTTPSSession.URL, port: HTTPSSession.PORT, restEndpoint: "/users/logout")).responseData{ Response in
          print("logout")
       }
       
    }
    
-   public func suspend()
-   {
-   
-   }
-   
-   public func stoptransaction(){
-      
-   }
 }
