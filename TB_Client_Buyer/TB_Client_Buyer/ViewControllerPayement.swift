@@ -9,6 +9,8 @@
 import UIKit
 import BButton
 import BButton
+import MBProgressHUD
+import SCLAlertView
 
 class ViewControllerPayement: UIViewController {
    
@@ -22,19 +24,21 @@ class ViewControllerPayement: UIViewController {
    
    @IBOutlet weak var PaiementButton: BButton!
    
-   @IBOutlet weak var LoadAmountButton: BButton!
+   @IBOutlet weak var AmountLabel: UILabel!
+   
+   var hud: MBProgressHUD?
+
+   var receipt: ReceiptPayDTO?
+   
    
     override func viewDidLoad() {
       super.viewDidLoad()
-      LoadAmountButton.color = UIColor.bb_successColorV2()
-      LoadAmountButton.setStyle(BButtonStyle.BootstrapV2)
-      LoadAmountButton.setType(BButtonType.Success)
-      LoadAmountButton.addAwesomeIcon(FAIcon.FADownload, beforeTitle: true)
       
       PaiementButton.color = UIColor.bb_purpleBButtonColor()
       PaiementButton.setStyle(BButtonStyle.BootstrapV2)
       PaiementButton.setType(BButtonType.Purple)
       PaiementButton.addAwesomeIcon(FAIcon.FAMoney, beforeTitle: true)
+      PaiementButton.enabled = false
       
       
       
@@ -43,21 +47,39 @@ class ViewControllerPayement: UIViewController {
       ReturnMenuButton.setType(BButtonType.Danger)
       ReturnMenuButton.addAwesomeIcon(FAIcon.FAAngleDoubleLeft, beforeTitle: true)
 
-      UID.text = toPass;
-        // Do any additional setup after loading the view.
       
+      hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+      hud?.labelText = "Receipt Loading in progress"
    
-      
-//      let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-//      dispatch_async(dispatch_get_global_queue(priority, 0)) {
-//         
-//         while(true){
-//            print("test");
-//            usleep(1000*1000)
-//         }
-//      }
-      
-      
+      httpsSession.getReceiptToPay(toPass){
+         (success: Bool, errorDescription:String, receiptPayDTO : ReceiptPayDTO?) in
+         
+         self.hud!.hide(true)
+         
+         if(success)
+         {
+            self.receipt = receiptPayDTO
+            
+            self.AmountLabel.text = "CHF " + (self.receipt?.amount?.description)!
+            
+            self.PaiementButton.enabled = true
+         }
+         else
+         {
+            let appearance = SCLAlertView.SCLAppearance(
+               kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+               kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+               kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+               showCloseButton: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("Return to menu"){
+               self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
+            }
+            alertView.showError("Receipt Loading Error", subTitle: errorDescription)
+         }
+      }
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,6 +87,38 @@ class ViewControllerPayement: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+   @IBAction func PaiementAction(sender: AnyObject) {
+      hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+      hud?.labelText = "Paiement in progress"
+      
+      httpsSession.PayReceipt(receipt!){
+         (success: Bool, description: String) in
+         
+         self.hud!.hide(true)
+         
+         if(success)
+         {
+            let alertView = SCLAlertView()
+            alertView.addButton("Return to menu"){
+               self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
+            }
+            alertView.showSuccess("Paiement", subTitle: description)
+         }
+         else
+         {
+            let alertView = SCLAlertView()
+            alertView.addButton("Return to menu"){
+               self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
+            }
+            alertView.showError("Paiement Error", subTitle: description)
+
+         }
+         
+         
+      }
+      
+   }
+   
    @IBAction func ReturnMenuAction(sender: AnyObject) {
       self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
    }

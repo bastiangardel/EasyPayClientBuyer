@@ -67,6 +67,7 @@ class ViewControllerLogin: UIViewController {
       httpsSession.login(LoginTF.text!, password: PasswordTF.text!){
          (success: Bool, errorDescription:String) in
          
+         self.hud!.hide(true)
          if(success)
          {
             if ((self.keychain.get("login")) == nil && (self.keychain.get("password")) == nil) {
@@ -87,15 +88,10 @@ class ViewControllerLogin: UIViewController {
          }
          else
          {
-            self.hud!.hide(true)
+            
 
             let alertView = SCLAlertView()
-            alertView.showError("Login", subTitle: errorDescription)
-            
-//            let alertController = UIAlertController(title: "Login", message:
-//               errorDescription, preferredStyle: UIAlertControllerStyle.Alert)
-//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-//            self.presentViewController(alertController, animated: true, completion: nil)
+            alertView.showError("Login Error", subTitle: errorDescription)
             
             self.loginButton.enabled = true
             

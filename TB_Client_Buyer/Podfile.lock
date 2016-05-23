@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (3.3.0)
+  - AlamofireObjectMapper (3.0.0):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
   - BButton (4.0.2)
   - Bluetonium (1.0.1)
   - KeychainSwift (3.0.11)
@@ -11,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - AlamofireObjectMapper (~> 3.0)
   - BButton
   - Bluetonium
   - KeychainSwift (~> 3.0)
@@ -31,6 +35,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  AlamofireObjectMapper: 2d16585d06177be0116d76de73497e77437798af
   BButton: ab0f2ed3b998ae73c5188b57d270d81e4a1eeb27
   Bluetonium: 3459a4509d777a824880c0f2521832cabe8cb9ea
   KeychainSwift: 0a4214c910423543a42b0f30f25987d46178b6a5
@@ -40,6 +45,6 @@ SPEC CHECKSUMS:
   SwiftQRCode: ce939b2f3ceba3a4b89a99c981cba70604e480cf
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 67cfb593297ded0e6ff934762a5a38e85f98594f
+PODFILE CHECKSUM: ad04d6df5c965812e40bd94adfd1ce5baeb6b487
 
 COCOAPODS: 1.0.0

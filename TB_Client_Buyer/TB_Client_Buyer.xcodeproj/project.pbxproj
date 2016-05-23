@@ -10,8 +10,10 @@
 		166A031BDAED46DCBD352937 /* Pods_TB_Client_BuyerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40D49AEE6517DD03886DD36 /* Pods_TB_Client_BuyerUITests.framework */; };
 		3B1F1F0BEC4477AB32527E2E /* Pods_TB_Client_Buyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1201FCED0FE00765343D85C0 /* Pods_TB_Client_Buyer.framework */; };
 		AF047EC11CBBBB7300E73B0A /* ViewControllerPayement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */; };
+		AF0DB8A71CEF36E500F4E17A /* ReceiptPayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0DB8A61CEF36E500F4E17A /* ReceiptPayDTO.swift */; };
 		AF2B48271CE9E7190083913E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF2B48261CE9E7190083913E /* Settings.bundle */; };
 		AF2B48291CE9F1EE0083913E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2B48281CE9F1EE0083913E /* Settings.swift */; };
+		AF2D12E11CF31D8F007661CD /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D12E01CF31D8F007661CD /* MessageDTO.swift */; };
 		AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */; };
 		AF537ECD1CB5C39F006F6879 /* ViewControllerQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */; };
 		AF537ECF1CB5C3CA006F6879 /* ViewControllerBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */; };
@@ -88,8 +90,10 @@
 		5BCC0CFC8F930701CE58B961 /* Pods-TB_Client_BuyerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TB_Client_BuyerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TB_Client_BuyerUITests/Pods-TB_Client_BuyerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C0470D91EAEE0F026102A75 /* Pods_TB_Client_BuyerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TB_Client_BuyerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF047EC01CBBBB7200E73B0A /* ViewControllerPayement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPayement.swift; sourceTree = "<group>"; };
+		AF0DB8A61CEF36E500F4E17A /* ReceiptPayDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptPayDTO.swift; sourceTree = "<group>"; };
 		AF2B48261CE9E7190083913E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AF2B48281CE9F1EE0083913E /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		AF2D12E01CF31D8F007661CD /* MessageDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
 		AF537ECA1CB5C12E006F6879 /* ViewControllerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMenu.swift; sourceTree = "<group>"; };
 		AF537ECC1CB5C39F006F6879 /* ViewControllerQR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQR.swift; sourceTree = "<group>"; };
 		AF537ECE1CB5C3CA006F6879 /* ViewControllerBLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBLE.swift; sourceTree = "<group>"; };
@@ -200,6 +204,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AF0DB8A51CEF366700F4E17A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				AF0DB8A61CEF36E500F4E17A /* ReceiptPayDTO.swift */,
+				AF2D12E01CF31D8F007661CD /* MessageDTO.swift */,
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
 		AF9082141CB54094003207A2 = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +240,7 @@
 		AF90821F1CB54094003207A2 /* TB_Client_Buyer */ = {
 			isa = PBXGroup;
 			children = (
+				AF0DB8A51CEF366700F4E17A /* DTO */,
 				AFF5AEE81CC677F60072C215 /* Storyboard */,
 				AFF5AEE71CC639250072C215 /* Communications */,
 				AFF5AEE61CC638F30072C215 /* ViewController */,
@@ -673,6 +687,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF537ECB1CB5C12E006F6879 /* ViewControllerMenu.swift in Sources */,
+				AF2D12E11CF31D8F007661CD /* MessageDTO.swift in Sources */,
+				AF0DB8A71CEF36E500F4E17A /* ReceiptPayDTO.swift in Sources */,
 				AFF5AEE51CC627D10072C215 /* HTTPSSession.swift in Sources */,
 				AF2B48291CE9F1EE0083913E /* Settings.swift in Sources */,
 				AF047EC11CBBBB7300E73B0A /* ViewControllerPayement.swift in Sources */,
