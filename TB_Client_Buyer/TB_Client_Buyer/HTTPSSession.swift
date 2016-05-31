@@ -49,6 +49,11 @@ public class HTTPSSession: NSObject {
       return "https://" + address + ":" + port + restEndpoint;
    }
    
+   private func requestParameter(name:String,value:String) -> String{
+      
+      return String("?") + name + "=" + value
+   }
+   
    private func errorDescriptionJSON(response : Response<AnyObject,NSError>, error : NSError)->String
    {
       var description: String = ""
@@ -189,7 +194,7 @@ public class HTTPSSession: NSObject {
    }
    
    
-   public func PayReceipt (let receipt: ReceiptPayDTO, completion: (success: Bool, description: String) -> Void){
+   public func PayReceipt (let receipt: ReceiptPayDTO, let UUID: String, completion: (success: Bool, description: String) -> Void){
       
       var message : MessageDTO?
       
@@ -202,7 +207,7 @@ public class HTTPSSession: NSObject {
       print("try to get Receipt to pay")
       
       
-      defaultManager.request(.POST, completeURL(HTTPSSession.URL, port: HTTPSSession.PORT, restEndpoint: "/receipts/pay"), headers : headers, parameters: Mapper<ReceiptPayDTO>().toJSON(receipt) , encoding: .JSON)
+      defaultManager.request(.POST, completeURL(HTTPSSession.URL, port: HTTPSSession.PORT, restEndpoint: "/receipts/pay") + requestParameter("uuid", value: UUID), headers : headers, parameters: Mapper<ReceiptPayDTO>().toJSON(receipt) , encoding: .JSON)
          .validate()
          .responseJSON{ Response in
             switch Response.result {

@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class ReceiptPayDTO: Mappable {
    
-   var id : String?
+   var id : Int?
    var amount : Double?
    
    

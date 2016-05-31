@@ -28,6 +28,11 @@ class ViewControllerLogin: UIViewController {
    
    var hud: MBProgressHUD?
    
+   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+      LoginTF.endEditing(true)
+      PasswordTF.endEditing(true)
+      
+   }
   
    
    override func viewDidLoad() {

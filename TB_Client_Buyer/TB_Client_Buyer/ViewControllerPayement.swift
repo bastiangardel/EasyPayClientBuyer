@@ -8,7 +8,6 @@
 
 import UIKit
 import BButton
-import BButton
 import MBProgressHUD
 import SCLAlertView
 
@@ -39,8 +38,6 @@ class ViewControllerPayement: UIViewController {
       PaiementButton.setType(BButtonType.Purple)
       PaiementButton.addAwesomeIcon(FAIcon.FAMoney, beforeTitle: true)
       PaiementButton.enabled = false
-      
-      
       
       ReturnMenuButton.color = UIColor.bb_dangerColorV2()
       ReturnMenuButton.setStyle(BButtonStyle.BootstrapV2)
@@ -91,32 +88,32 @@ class ViewControllerPayement: UIViewController {
       hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
       hud?.labelText = "Paiement in progress"
       
-      httpsSession.PayReceipt(receipt!){
+      let appearance = SCLAlertView.SCLAppearance(
+         kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+         kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+         kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+         showCloseButton: false
+      )
+      
+      let alertView = SCLAlertView(appearance: appearance)
+      alertView.addButton("Return to menu"){
+         self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
+      }
+      
+      httpsSession.PayReceipt(receipt!, UUID: toPass){
          (success: Bool, description: String) in
          
          self.hud!.hide(true)
          
          if(success)
          {
-            let alertView = SCLAlertView()
-            alertView.addButton("Return to menu"){
-               self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
-            }
             alertView.showSuccess("Paiement", subTitle: description)
          }
          else
          {
-            let alertView = SCLAlertView()
-            alertView.addButton("Return to menu"){
-               self.performSegueWithIdentifier("ReturnMenuSegue", sender: self)
-            }
             alertView.showError("Paiement Error", subTitle: description)
-
          }
-         
-         
       }
-      
    }
    
    @IBAction func ReturnMenuAction(sender: AnyObject) {

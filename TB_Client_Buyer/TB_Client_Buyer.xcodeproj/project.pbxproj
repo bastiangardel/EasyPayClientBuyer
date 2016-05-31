@@ -240,8 +240,8 @@
 		AF90821F1CB54094003207A2 /* TB_Client_Buyer */ = {
 			isa = PBXGroup;
 			children = (
-				AF0DB8A51CEF366700F4E17A /* DTO */,
 				AFF5AEE81CC677F60072C215 /* Storyboard */,
+				AF0DB8A51CEF366700F4E17A /* DTO */,
 				AFF5AEE71CC639250072C215 /* Communications */,
 				AFF5AEE61CC638F30072C215 /* ViewController */,
 				AF9082201CB54094003207A2 /* AppDelegate.swift */,
