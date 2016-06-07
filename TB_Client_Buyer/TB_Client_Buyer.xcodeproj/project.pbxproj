@@ -451,7 +451,7 @@
 				TargetAttributes = {
 					AF90821C1CB54094003207A2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MGR2YCE68N;
+						DevelopmentTeam = TW7764H853;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -838,9 +838,10 @@
 			baseConfigurationReference = EF459CA131F66F3D8B8EBFB8 /* Pods-TB_Client_Buyer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TB_Client_Buyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-Buyer";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.heig-vd.easypaybuyer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -850,9 +851,10 @@
 			baseConfigurationReference = 0EC999B3F4781E96EEF6A26C /* Pods-TB_Client_Buyer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TB_Client_Buyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HEIG-VD.TB-Client-Buyer";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.heig-vd.easypaybuyer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
