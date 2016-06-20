@@ -90,8 +90,8 @@
                         <color key="backgroundColor" red="0.72035223245620728" green="0.8797573447227478" blue="0.93801230192184448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="F5t-S9-Ftr" secondAttribute="trailing" id="C3N-pN-pU8"/>
-                            <constraint firstItem="F5t-S9-Ftr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="O6l-72-ON8"/>
                             <constraint firstItem="F5t-S9-Ftr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X8K-Rv-Exn"/>
+                            <constraint firstItem="F5t-S9-Ftr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="pcq-Va-hph"/>
                         </constraints>
                     </view>
                     <connections>
