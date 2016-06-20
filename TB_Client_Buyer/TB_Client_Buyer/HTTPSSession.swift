@@ -30,7 +30,7 @@ public class HTTPSSession: NSObject {
       
       let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
       configuration.HTTPAdditionalHeaders = Alamofire.Manager.defaultHTTPHeaders
-      configuration.timeoutIntervalForRequest = 2
+      configuration.timeoutIntervalForRequest = 10
       
       return Alamofire.Manager(
          configuration: configuration,
