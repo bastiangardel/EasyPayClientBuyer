@@ -122,14 +122,6 @@ class ViewControllerBLE: UIViewController, ManagerDelegate,UIPickerViewDataSourc
       return manager.foundDevices.count
    }
    
-//   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//      
-//      if Array(manager.foundDevices)[row].peripheral.name != nil {
-//         return Array(manager.foundDevices)[row].peripheral.name
-//      }
-//      
-//      return Array(manager.foundDevices)[row].peripheral.identifier.UUIDString
-//   }
    
    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
       
