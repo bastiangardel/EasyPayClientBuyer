@@ -25,6 +25,8 @@ class ViewControllerPayement: UIViewController {
    
    @IBOutlet weak var AmountLabel: UILabel!
    
+   @IBOutlet weak var IDLabel: UILabel!
+   
    var hud: MBProgressHUD?
 
    var receipt: ReceiptPayDTO?
@@ -57,7 +59,9 @@ class ViewControllerPayement: UIViewController {
          {
             self.receipt = receiptPayDTO
             
-            self.AmountLabel.text = "CHF " + (self.receipt?.amount?.description)!
+            self.AmountLabel.text = " CHF " + String(format: "%.02f",(self.receipt?.amount)!)
+            
+            self.IDLabel.text = "Receipt ID: " + (self.receipt?.id?.description)!
             
             self.PaiementButton.enabled = true
          }
